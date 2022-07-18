@@ -1,6 +1,6 @@
-import './../style/App.css'
-import Navigation from './../components/Navigation.js'
+import '../style/globals.scss'
 import styled from 'styled-components'
+import Navigation from '../components/Navigation'
 
 const Header = styled.div`
   background-color: #3e1348;
