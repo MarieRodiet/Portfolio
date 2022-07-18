@@ -4,7 +4,7 @@ function Navigation() {
         <nav><ul>
             <li>Projets</li>
             <li>CV</li>
-            <li>Contact</li></ul></nav>
+            <li>Codfgsdfgntact</li></ul></nav>
     )
 }
 
