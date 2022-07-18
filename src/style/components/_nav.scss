@@ -1,0 +1,17 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.nav {
+  display: flex;
+  background-color: $light;
+  color: $dark;
+  @include typo-size($second_font, map-get($font-sizes, xxs));
+  &-logo {
+    background-color: $dark;
+    color: $light;
+    display: hidden;
+  }
+  &-links {
+    display: hidden;
+  }
+}

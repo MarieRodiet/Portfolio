@@ -1,0 +1,17 @@
+@mixin btn {
+}
+
+@mixin box-shadow($x, $y, $blurr) {
+    box-shadow: $x $y $blurr darken($bgd-gray, 20%);
+}
+
+@mixin typo-size($typo, $size) {
+    font-family: $typo;
+    font-size: $size;
+}
+
+@mixin icon-gradient {
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}

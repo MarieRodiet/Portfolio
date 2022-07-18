@@ -1,19 +1,11 @@
-import '../style/globals.scss'
-import styled from 'styled-components'
-import Navigation from '../components/Navigation'
+import '../style/base/globals.scss'
 
-const Header = styled.div`
-  background-color: #3e1348;
-  color: white;
-`
+import Nav from '../components/Nav'
 
 function App() {
   return (
     <div className="App">
-      <Header>
-        <Navigation />
-        <h1>Portfolio</h1>
-      </Header>
+      <Nav />
     </div>
   )
 }
