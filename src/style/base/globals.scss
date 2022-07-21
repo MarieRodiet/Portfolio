@@ -1,13 +1,23 @@
 $breakpoints: (
-    mobile: 599px,
-    tablet: 798px,
-    desktop: 998px,
+  mobile: 599px,
+  tablet: 798px,
+  desktop: 998px,
 );
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
-    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#page-wrap {
+  padding-bottom: 0px;
+  padding-top: 0px;
 }

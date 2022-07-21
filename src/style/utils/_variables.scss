@@ -15,13 +15,14 @@ $font-sizes: (
 );
 
 $tablet-breakpoint: 990px;
+
 @media only screen and (min-width: $tablet-breakpoint) {
   $font-sizes: (
-    xxl: 60px,
-    xl: 50px,
-    l: 40px,
-    sm: 30px,
-    xs: 20px,
-    xxs: 16px,
+    xxl: 50vh,
+    xl: 40vh,
+    l: 30vh,
+    sm: 20vh,
+    xs: 10vh,
+    xxs: 8vh,
   );
 }
