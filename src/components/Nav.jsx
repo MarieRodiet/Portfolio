@@ -1,38 +1,29 @@
-import { useState } from 'react'
-import { ReactComponent as BurgerMenu } from '../assets/burger-menu.svg'
-
+import { slide as Menu } from 'react-burger-menu'
+import logo from '../assets/MM.png'
 export default function Nav() {
-  const [showLinks, setShowLinks] = useState(false)
-
-  //   useEffect(() => {
-  //     const ul = document.querySelector('.nav-burger-links')
-  //     if (ul.hasChildNodes) {
-  //       const links = ul.childNodes
-  //       console.log(links)
-  //     }
-  //   })
   return (
     <div>
       <nav className="nav">
-        <div className="nav-logo"></div>
+        <img src={logo} alt="Marie Moore logo" className="nav-logo" />
         <ul className="nav-links">
           <li className="nav-links-link">About Me</li>
           <li className="nav-links-link">Projects</li>
           <li className="nav-links-link">Contact Me</li>
         </ul>
-        <BurgerMenu
-          className="nav-burger"
-          onClick={() => setShowLinks(!showLinks)}
-        />
-
-        {showLinks ? (
-          <ul className="nav-burger-links">
-            <li className="nav-burger-links-link">About Me</li>
-            <li className="nav-burger-links-link">Projects</li>
-            <li className="nav-burger-links-link">Contact Me</li>
-          </ul>
-        ) : null}
       </nav>
+      <div className="burger-nav">
+        <Menu>
+          <a className="menu-item" href="/">
+            About Me
+          </a>
+          <a className="menu-item" href="/projects">
+            Projects
+          </a>
+          <a className="menu-item" href="/form">
+            Contact Me
+          </a>
+        </Menu>
+      </div>
     </div>
   )
 }

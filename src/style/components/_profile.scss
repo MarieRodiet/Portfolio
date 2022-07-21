@@ -1,16 +1,72 @@
 .profile {
-  padding: 100px 10%;
+  padding: 100px 8%;
   background-color: $light;
   color: $dark;
-  &-name {
-    font-weight: 100;
-    width: 300px;
-    @include typo-size($main_font, map-get($font-sizes, xl));
+  &-text {
+    max-width: 500px;
+    &-name {
+      font-weight: 100;
+      width: 300px;
+      @include typo-size($main_font, map-get($font-sizes, xl));
+    }
+    &-intro {
+      width: 100%;
+      padding-top: 20px;
+      line-height: 1.1;
+      font-weight: 300;
+      @include typo-size($second_font, map-get($font-sizes, xs));
+    }
   }
-  &-intro {
+  &-imgContainer {
+    display: none;
+  }
+  @media (min-width: map-get($breakpoints, tablet)) {
     padding-top: 20px;
-    line-height: 1.1;
-    font-weight: 300;
-    @include typo-size($second_font, map-get($font-sizes, xs));
+    display: flex;
+    justify-content: space-between;
+    &-text {
+      width: 60%;
+      &-name {
+        @include typo-size($main_font, map-get($font-sizes, xl));
+      }
+      &-intro {
+        @include typo-size($second_font, map-get($font-sizes, xs));
+      }
+    }
+    &-imgContainer {
+      display: block;
+      display: flex;
+      width: 40%;
+      align-items: center;
+      &-picture {
+        height: 290px;
+        width: 100%;
+        max-width: 200px;
+        object-fit: cover;
+        border-radius: 4px;
+        margin: 0 auto;
+      }
+    }
+  }
+  @media (min-width: map-get($breakpoints, desktop)) {
+    padding: 40px 100px;
+    &-text {
+      width: 70%;
+      max-width: none;
+      padding-right: 10px;
+      &-name {
+        @include typo-size($main_font, map-get($font-sizes, xxl));
+      }
+      &-intro {
+        @include typo-size($second_font, map-get($font-sizes, sl));
+      }
+    }
+    &-imgContainer {
+      width: 30%;
+      &-picture {
+        height: 430px;
+        max-width: 310px;
+      }
+    }
   }
 }

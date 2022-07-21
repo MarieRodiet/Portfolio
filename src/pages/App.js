@@ -1,11 +1,11 @@
 import '../style/base/globals.scss'
 import Profile from '../components/Profile'
-import NewNav from '../components/NewNav'
+import Nav from '../components/Nav'
 
 function App() {
   return (
     <div className="App" id="outer-container">
-      <NewNav />
+      <Nav />
       <Profile />
     </div>
   )

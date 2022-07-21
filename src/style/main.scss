@@ -1,12 +1,11 @@
 @import './base/globals';
-@import './utils/mixins';
-@import './utils/variables';
+@import './utils/_mixins';
+@import './utils/_variables';
 @import './components/_footer';
 @import './components/_formSection';
-@import './components/_nav';
 @import './components/profile';
 @import './components/_project';
 @import './components/_projectsSection';
 @import './components/_skillsSection';
 @import './components/_socialMedia';
-@import './components/newNav';
+@import './components/nav';
