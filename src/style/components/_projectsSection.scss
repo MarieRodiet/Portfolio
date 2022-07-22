@@ -1,6 +1,6 @@
 .projectsSection {
   background-color: $light;
-  padding: 40px 8% 20px 8%;
+  padding: 0px 8% 20px 8%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,6 +10,9 @@
   }
   &-container {
     &-project {
+      cursor: pointer;
+      color: $dark;
+      text-decoration: none;
       display: flex;
       flex-direction: column;
       border: 2px solid $dark;
@@ -29,22 +32,73 @@
         &-img {
           width: 100%;
           height: auto;
-          max-width: 120px;
+          max-width: 200px;
           object-fit: cover;
           border-radius: 5px;
         }
         &-description {
+          text-align: justify;
           width: 100%;
-          padding: 10px 0;
+          padding: 10px;
           font-weight: 300;
           @include typo-size($second_font, map-get($font-sizes, xxs));
         }
         &-tags {
+          width: 100%;
+          height: auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
           span {
+            text-align: center;
+            width: 100%;
             background-color: $dark;
             color: $light;
-            border-radius: 4px;
-            padding: 3px 5px;
+            border-radius: 5px;
+            padding: 0.2em;
+            margin: 0.2em;
+            @include typo-size($main_font, map-get($font-sizes, xxs));
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .projectsSection {
+    &-title {
+      @include typo-size($main_font, map-get($font-sizes, l));
+    }
+    &-container {
+      &-project {
+        &-name {
+          padding: 5px 0;
+          font-weight: 400;
+          @include typo-size($main_font, map-get($font-sizes, s));
+        }
+        &-content {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          &-img {
+            width: 40%;
+            max-width: 250px;
+          }
+          &-description {
+            text-align: start;
+            width: 40%;
+            @include typo-size($second_font, map-get($font-sizes, xs));
+          }
+          &-tags {
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            span {
+              padding: 0.3em;
+              margin: 0.4em;
+              @include typo-size($main_font, map-get($font-sizes, xs));
+            }
           }
         }
       }
@@ -54,5 +108,29 @@
 @media (min-width: map-get($breakpoints, desktop)) {
   .projectsSection {
     padding: 40px 100px;
+    &-title {
+      @include typo-size($main_font, map-get($font-sizes, xl));
+    }
+    &-container {
+      &-project {
+        &-name {
+          @include typo-size($main_font, map-get($font-sizes, sl));
+        }
+        &-content {
+          &-img {
+            max-width: 350px;
+          }
+          &-description {
+            @include typo-size($second_font, map-get($font-sizes, s));
+          }
+          &-tags {
+            span {
+              max-width: 160px;
+              @include typo-size($main_font, map-get($font-sizes, s));
+            }
+          }
+        }
+      }
+    }
   }
 }

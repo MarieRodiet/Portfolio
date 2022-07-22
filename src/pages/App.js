@@ -4,6 +4,8 @@ import Nav from '../components/Nav'
 import SkillsSection from '../components/SkillsSection'
 import Footer from '../components/Footer'
 import ProjectsSection from '../components/ProjectsSection'
+import FormSection from '../components/FormSection'
+
 function App() {
   return (
     <div className="App" id="outer-container">
@@ -11,6 +13,7 @@ function App() {
       <Profile />
       <SkillsSection />
       <ProjectsSection />
+      <FormSection />
       <Footer />
     </div>
   )

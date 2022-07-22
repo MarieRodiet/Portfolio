@@ -1,0 +1,104 @@
+.formSection {
+  padding: 10px 8% 20px 8%;
+  width: 100%;
+  height: auto;
+  background-color: $light;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &-header {
+    font-weight: 500;
+    @include typo-size($main_font, map-get($font-sizes, sl));
+  }
+  &-form {
+    padding: 20px 0;
+    text-align: center;
+    &-inputWrapper {
+      label {
+        display: none;
+      }
+      input,
+      textarea {
+        max-width: 500px;
+        border: 2px solid black;
+        padding: 5px;
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 5px;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        @include typo-size($second_font, map-get($font-sizes, xxs));
+      }
+      textarea {
+        height: 200px;
+      }
+    }
+    &-btn {
+      background-color: $dark;
+      color: $light;
+      padding: 7px;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 500px;
+      font-weight: 300;
+      @include typo-size($second_font, map-get($font-sizes, xxs));
+    }
+  }
+  &-socialMediaContainer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 200px;
+    &-link {
+      width: 40px;
+    }
+  }
+}
+@media (min-width: map-get($breakpoints, tablet)) {
+  .formSection {
+    text-align: center;
+    &-form {
+      input,
+      textarea {
+        padding: 12px;
+        margin-bottom: 13px;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        @include typo-size($second_font, map-get($font-sizes, s));
+      }
+      &-btn {
+        padding: 10px;
+        @include typo-size($second_font, map-get($font-sizes, xs));
+      }
+    }
+  }
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+  .formSection {
+    padding: 40px 100px;
+    text-align: center;
+    &-header {
+      font-weight: 600;
+      @include typo-size($main_font, map-get($font-sizes, l));
+    }
+    &-form {
+      input,
+      textarea {
+        padding: 15px;
+        margin-bottom: 15px;
+      }
+      input::placeholder,
+      textarea::placeholder {
+        @include typo-size($second_font, map-get($font-sizes, s));
+      }
+      &-btn {
+        padding: 12px;
+        @include typo-size($second_font, map-get($font-sizes, s));
+      }
+    }
+  }
+}
