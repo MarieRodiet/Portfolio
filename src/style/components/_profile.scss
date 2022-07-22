@@ -1,5 +1,5 @@
 .profile {
-  padding: 100px 8%;
+  padding: 100px 8% 20px 8%;
   background-color: $light;
   color: $dark;
   &-text {
@@ -58,7 +58,7 @@
         @include typo-size($main_font, map-get($font-sizes, xxl));
       }
       &-intro {
-        @include typo-size($second_font, map-get($font-sizes, sl));
+        @include typo-size($second_font, map-get($font-sizes, s));
       }
     }
     &-imgContainer {

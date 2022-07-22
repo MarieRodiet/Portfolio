@@ -1,0 +1,58 @@
+.projectsSection {
+  background-color: $light;
+  padding: 40px 8% 20px 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-title {
+    text-align: center;
+    @include typo-size($main_font, map-get($font-sizes, sl));
+  }
+  &-container {
+    &-project {
+      display: flex;
+      flex-direction: column;
+      border: 2px solid $dark;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 15px;
+      &-name {
+        padding: 10px 0;
+        text-align: center;
+        font-weight: 600;
+        @include typo-size($main_font, map-get($font-sizes, xs));
+      }
+      &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-img {
+          width: 100%;
+          height: auto;
+          max-width: 120px;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+        &-description {
+          width: 100%;
+          padding: 10px 0;
+          font-weight: 300;
+          @include typo-size($second_font, map-get($font-sizes, xxs));
+        }
+        &-tags {
+          span {
+            background-color: $dark;
+            color: $light;
+            border-radius: 4px;
+            padding: 3px 5px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: map-get($breakpoints, desktop)) {
+  .projectsSection {
+    padding: 40px 100px;
+  }
+}

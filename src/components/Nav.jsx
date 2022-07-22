@@ -1,5 +1,5 @@
 import { slide as Menu } from 'react-burger-menu'
-import logo from '../assets/MM.png'
+import logo from '../assets/IMG/MM.png'
 export default function Nav() {
   return (
     <div>

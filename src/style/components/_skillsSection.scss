@@ -1,0 +1,71 @@
+.skillsSection {
+  padding: 20px 8%;
+  height: fit-content;
+  background-color: $light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &-resume {
+    width: 100%;
+    max-width: 120px;
+    button {
+      width: 100%;
+      margin: 0 auto;
+      background-color: $dark;
+      color: $light;
+      padding: 12px 15px 10px 15px;
+      border-radius: 4px;
+      font-weight: 300;
+      @include typo-size($second_font, map-get($font-sizes, xs));
+    }
+  }
+  &-skills {
+    padding: 25px 0;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    span {
+      padding: 12px;
+      @include typo-size($main_font, map-get($font-sizes, xxs));
+      font-weight: bold;
+    }
+  }
+}
+@media (min-width: map-get($breakpoints, tablet)) {
+  .skillsSection {
+    &-resume {
+      width: 100%;
+      max-width: 140px;
+      button {
+        @include typo-size($second_font, map-get($font-sizes, s));
+      }
+    }
+    &-skills {
+      max-width: 550px;
+      span {
+        padding: 12px 14px;
+        @include typo-size($main_font, map-get($font-sizes, xxs));
+        font-weight: bold;
+      }
+    }
+  }
+}
+@media (min-width: map-get($breakpoints, desktop)) {
+  .skillsSection {
+    &-resume {
+      width: 100%;
+      max-width: 200px;
+      button {
+        @include typo-size($second_font, map-get($font-sizes, sl));
+      }
+    }
+    &-skills {
+      max-width: 750px;
+      span {
+        padding: 14px 25px;
+        @include typo-size($main_font, map-get($font-sizes, xs));
+      }
+    }
+  }
+}

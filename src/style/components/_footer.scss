@@ -1,0 +1,17 @@
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: $light;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include typo-size($second_font, map-get($font-sizes, xxs));
+  .icon {
+    margin: 0 10px;
+    width: 20px;
+  }
+  @media (min-width: map-get($breakpoints, desktop)) {
+    @include typo-size($second_font, map-get($font-sizes, xs));
+  }
+}
