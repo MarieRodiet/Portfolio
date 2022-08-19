@@ -19,6 +19,10 @@
       justify-content: space-around;
       align-items: center;
       @include typo-size($main_font, map-get($font-sizes, s));
+      &-link {
+        text-decoration: none;
+        color: $dark;
+      }
     }
     &-links:hover {
       cursor: pointer;

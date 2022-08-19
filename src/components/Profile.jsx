@@ -1,7 +1,7 @@
 import profilePicture from '../assets/IMG/profile-picture.png'
 export default function Profile() {
   return (
-    <div className="profile">
+    <div className="profile" id="aboutme">
       <div className="profile-text">
         <h1 className="profile-text-name">Marie Moore</h1>
         <p className="profile-text-intro">

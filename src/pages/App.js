@@ -1,4 +1,5 @@
 import '../style/base/globals.scss'
+import { HashRouter } from 'react-router-dom'
 import Profile from '../components/Profile'
 import Nav from '../components/Nav'
 import SkillsSection from '../components/SkillsSection'
@@ -9,12 +10,14 @@ import FormSection from '../components/FormSection'
 function App() {
   return (
     <div className="App" id="outer-container">
-      <Nav />
-      <Profile />
-      <SkillsSection />
-      <ProjectsSection />
-      <FormSection />
-      <Footer />
+      <HashRouter>
+        <Nav />
+        <Profile />
+        <SkillsSection />
+        <ProjectsSection />
+        <FormSection />
+        <Footer />
+      </HashRouter>
     </div>
   )
 }

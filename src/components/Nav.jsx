@@ -1,27 +1,77 @@
 import { slide as Menu } from 'react-burger-menu'
+import { HashLink } from 'react-router-hash-link'
 import logo from '../assets/IMG/MM.png'
+
 export default function Nav() {
   return (
     <div>
       <nav className="nav">
         <img src={logo} alt="Marie Moore logo" className="nav-logo" />
         <ul className="nav-links">
-          <li className="nav-links-link">About Me</li>
-          <li className="nav-links-link">Projects</li>
-          <li className="nav-links-link">Contact Me</li>
+          <HashLink
+            smooth
+            className="nav-links-link"
+            to="#aboutme"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+            }
+          >
+            About Me
+          </HashLink>
+          <HashLink
+            smooth
+            className="nav-links-link"
+            to="#projects"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+            }
+          >
+            Projects
+          </HashLink>
+          <HashLink
+            smooth
+            className="nav-links-link"
+            to="#contactme"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+            }
+          >
+            Contact Me
+          </HashLink>
         </ul>
       </nav>
       <div className="burger-nav">
         <Menu>
-          <a className="menu-item" href="/">
+          <HashLink
+            smooth
+            className="menu-item"
+            to="#aboutme"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+            }
+          >
             About Me
-          </a>
-          <a className="menu-item" href="/projects">
+          </HashLink>
+          <HashLink
+            smooth
+            className="menu-item"
+            to="#projects"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+            }
+          >
             Projects
-          </a>
-          <a className="menu-item" href="/form">
+          </HashLink>
+          <HashLink
+            smooth
+            className="menu-item"
+            to="#contactme"
+            scroll={(el) =>
+              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+            }
+          >
             Contact Me
-          </a>
+          </HashLink>
         </Menu>
       </div>
     </div>

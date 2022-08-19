@@ -6,7 +6,7 @@ import { ReactComponent as LinkedIn } from '../assets/SVG/linkedin.svg'
 export default function FormSection() {
   const { register, handleSubmit } = useForm()
   return (
-    <div className="formSection">
+    <div className="formSection" id="contactme">
       <h1 className="formSection-header">Let&apos;s connect</h1>
       <form className="formSection-form" onSubmit={handleSubmit}>
         <div className="formSection-form-inputWrapper">
