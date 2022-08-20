@@ -11,7 +11,7 @@ export default function ProjectsSection() {
       img: ArgentBank,
       name: 'ArgentBank',
       description:
-        'Use of Backend API for Authentification and fetching data, Documentation with Postman and Swagger',
+        'This project is linked to a Backend API though different HTTP request. Authentification, fetching and modifying data , Documentation with Postman and Swagger',
       tags: ['REACT', 'REDUX', 'SWAPPER', 'POSTMAN'],
       url: 'https://github.com/MarieRodiet/argentBank-Front',
     },
@@ -25,29 +25,33 @@ export default function ProjectsSection() {
     {
       img: Kasa,
       name: 'Kasa',
-      description: '',
+      description:
+        'Web application using React and fetching data from a json file.',
       tags: ['REACT', 'JSON', 'RESPONSIVE', '404'],
       url: 'https://github.com/MarieRodiet/kasa',
     },
     {
       img: LearnAtHome,
       name: 'Learn@Home',
-      description: '',
-      tags: ['USER STORIES', 'FIGMA', 'USE CASES', 'UI/UX'],
+      description:
+        'Project that involves understanding the client needs in order to write precise documentation, then create the mockup and finally come up with a beautiful and professional design',
+      tags: ['AGILE', 'FIGMA', 'UI/UX'],
       url: 'https://github.com/MarieRodiet/learnAtHome',
     },
     {
       img: LesPetitsPlats,
       name: 'Les Petits Plats',
-      description: '',
-      tags: ['JSBENCH', 'ACCESSIBILITY', 'ALGORITHMS', 'BOOTSTRAP'],
+      description:
+        'Web application with a couple of search algorithms created in order to filter recipes in multiple ways',
+      tags: ['JSBENCH', 'ACCESSIBILITY', 'ALGO', 'BOOTSTRAP'],
       url: 'https://github.com/MarieRodiet/Les-Petits-Plats',
     },
     {
       img: Billed,
       name: 'Billed',
-      description: '',
-      tags: ['JEST', 'E2E TESTS', 'CHROME DEBUGGER'],
+      description:
+        'This project is about testing a web application that was coded with old jQuery code and no comment',
+      tags: ['JEST', 'E2E TESTS', 'DEBUGGING'],
       url: 'https://github.com/MarieRodiet/Billed',
     },
   ]
@@ -59,15 +63,15 @@ export default function ProjectsSection() {
           <a
             href={p.url}
             target="_blank"
-            key={`${i + p.name}`}
+            key={`${`${i} home page ${p.name}`}`}
             className="projectsSection-container-project"
           >
-            <h3 className="projectsSection-container-project-name">{p.name}</h3>
+            <h2 className="projectsSection-container-project-name">{p.name}</h2>
             <div className="projectsSection-container-project-content">
               <img
                 className="projectsSection-container-project-content-img"
                 src={p.img}
-                alt="project"
+                alt={`home page ${p.name}}`}
               />
               <div className="projectsSection-container-project-content-description">
                 {p.description}

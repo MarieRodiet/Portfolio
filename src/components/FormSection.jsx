@@ -1,24 +1,46 @@
-import { useForm } from 'react-hook-form'
+// import { useForm } from 'react-hook-form'
+import { useState } from 'react'
+import { send } from 'emailjs-com'
 import { ReactComponent as Github } from '../assets/SVG/github.svg'
 import { ReactComponent as Email } from '../assets/SVG/email.svg'
 import { ReactComponent as LinkedIn } from '../assets/SVG/linkedin.svg'
 
 export default function FormSection() {
-  const { register, handleSubmit } = useForm()
+  const [toSend, setToSend] = useState({
+    from_name: '',
+    message: '',
+    reply_to: '',
+  })
+  //   const { register, handleSubmit } = useForm()
+  const onSubmit = (e) => {
+    e.preventDefault()
+    send('service_dyz2255', 'template_cqdshuy', toSend, 'v6m1Gves3KCpgNMLl')
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text)
+      })
+      .catch((err) => {
+        console.log('FAILED...', err)
+      })
+  }
+  const handleChange = (e) => {
+    console.log(e)
+    setToSend({ ...toSend, [e.target.name]: e.target.value })
+  }
   return (
     <div className="formSection" id="contactme">
       <h1 className="formSection-header">Let&apos;s connect</h1>
-      <form className="formSection-form" onSubmit={handleSubmit}>
+      <form className="formSection-form" onSubmit={onSubmit}>
         <div className="formSection-form-inputWrapper">
           <label htmlFor="name">Name</label>
           <input
             required
             id="name"
-            type="name"
-            name="name"
+            type="text"
+            name="from_name"
             placeholder="First and Last name"
-            autoComplete="name"
-            {...register('name', { required: true })}
+            // {...register('name', { required: true })}
+            value={toSend.from_name}
+            onChange={handleChange}
           />
         </div>
         <div className="formSection-form-inputWrapper">
@@ -26,11 +48,12 @@ export default function FormSection() {
           <input
             required
             id="email"
-            type="text"
-            name="email"
-            autoComplete="email"
+            type="email"
+            name="reply_to"
             placeholder="your@email.com"
-            {...register('email', { required: true })}
+            // {...register('email', { required: true })}
+            value={toSend.reply_to}
+            onChange={handleChange}
           />
         </div>
         <div className="formSection-form-inputWrapper">
@@ -38,10 +61,12 @@ export default function FormSection() {
           <textarea
             required
             id="Message"
-            type="Message"
-            name="Message"
+            type="text"
+            name="message"
             placeholder="Message"
-            {...register('message', { required: true })}
+            // {...register('message', { required: true })}
+            value={toSend.message}
+            onChange={handleChange}
           />
         </div>
         <button className="formSection-form-btn" type="submit">
@@ -49,13 +74,20 @@ export default function FormSection() {
         </button>
       </form>
       <div className="formSection-socialMediaContainer">
-        <a href="https://github.com/MarieRodiet" target="_blank">
+        <a
+          href="https://github.com/MarieRodiet"
+          target="_blank"
+          aria-label="github link"
+        >
           <Github className="formSection-socialMediaContainer-link" />
         </a>
-        <a href="mailto:marie.rodiet@gmail.com">
+        <a href="mailto:marie.rodiet@gmail.com" aria-label="email me">
           <Email className="formSection-socialMediaContainer-link" />
         </a>
-        <a href="https://www.linkedin.com/in/marie-rodiet-moore/">
+        <a
+          href="https://www.linkedin.com/in/marie-rodiet-moore/"
+          aria-label="linkedin link"
+        >
           <LinkedIn className="formSection-socialMediaContainer-link" />
         </a>
       </div>

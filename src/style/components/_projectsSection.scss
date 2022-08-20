@@ -15,12 +15,12 @@
       text-decoration: none;
       display: flex;
       flex-direction: column;
-      border: 2px solid $dark;
-      border-radius: 5px;
+      border: 1px solid $dark;
+      border-radius: 1px;
       padding: 10px;
       margin: 15px;
       &-name {
-        padding: 10px 0;
+        padding: 12px 0;
         text-align: center;
         font-weight: 600;
         @include typo-size($main_font, map-get($font-sizes, xs));
@@ -97,7 +97,7 @@
             span {
               padding: 0.3em;
               margin: 0.4em;
-              @include typo-size($main_font, map-get($font-sizes, xs));
+              @include typo-size($main_font, map-get($font-sizes, xxs));
             }
           }
         }
@@ -126,7 +126,7 @@
           &-tags {
             span {
               max-width: 160px;
-              @include typo-size($main_font, map-get($font-sizes, s));
+              @include typo-size($main_font, map-get($font-sizes, xs));
             }
           }
         }
