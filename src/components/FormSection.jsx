@@ -19,7 +19,7 @@ export default function FormSection() {
         console.log('SUCCESS!', response.status, response.text)
       })
       .catch((err) => {
-        console.log('FAILED...', err)
+        console.error('FAILED...', err)
       })
   }
   const handleChange = (e) => {
@@ -50,7 +50,7 @@ export default function FormSection() {
             id="email"
             type="email"
             name="reply_to"
-            placeholder="your@email.com"
+            placeholder="youremail@gmail.com"
             // {...register('email', { required: true })}
             value={toSend.reply_to}
             onChange={handleChange}

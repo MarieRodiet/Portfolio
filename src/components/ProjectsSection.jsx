@@ -4,6 +4,8 @@ import Kasa from '../assets/IMG/kasa.png'
 import LearnAtHome from '../assets/IMG/learnathome.png'
 import LesPetitsPlats from '../assets/IMG/lespetitsplats.png'
 import Billed from '../assets/IMG/billed.png'
+import Fisheye from '../assets/IMG/Fisheye.png'
+import SliderPuzzle from '../assets/IMG/SliderPuzzle.png'
 
 export default function ProjectsSection() {
   const projects = [
@@ -11,14 +13,15 @@ export default function ProjectsSection() {
       img: ArgentBank,
       name: 'ArgentBank',
       description:
-        'This project is linked to a Backend API though different HTTP request. Authentification, fetching and modifying data , Documentation with Postman and Swagger',
+        'This project is linked to a Backend API accessed through different HTTP requests. Authentificating the user, storing the token along with fetching and modifying the data were the main focus of this project. Some documentation with Swagger and some initial testing of the API with Postman made it extra fun',
       tags: ['REACT', 'REDUX', 'SWAPPER', 'POSTMAN'],
       url: 'https://github.com/MarieRodiet/argentBank-Front',
     },
     {
       img: SportSee,
       name: 'Sportsee',
-      description: 'An app fetching data and converting it in amazing graphs',
+      description:
+        'This app fetchs data and converts it into amazing graphs. I used the factory pattern (see pages/App.js) to change the url in order to change where the data is fetch from (local server or json file within the root folder)',
       tags: ['HTML', 'SASS', 'RECHARTS', 'REACT'],
       url: 'https://github.com/MarieRodiet/sportsee_front',
     },
@@ -26,7 +29,7 @@ export default function ProjectsSection() {
       img: Kasa,
       name: 'Kasa',
       description:
-        'Web application using React and fetching data from a json file.',
+        'This Web application uses React and fetchs data from a json file. It uses react router, hooks along with some sass to style all that ',
       tags: ['REACT', 'JSON', 'RESPONSIVE', '404'],
       url: 'https://github.com/MarieRodiet/kasa',
     },
@@ -34,7 +37,7 @@ export default function ProjectsSection() {
       img: LearnAtHome,
       name: 'Learn@Home',
       description:
-        'Project that involves understanding the client needs in order to write precise documentation, then create the mockup and finally come up with a beautiful and professional design',
+        "This little but challenging project involves understanding the client's needs in order to write precise documentation, then create the mockup and finally come up with a beautiful and professional design",
       tags: ['AGILE', 'FIGMA', 'UI/UX'],
       url: 'https://github.com/MarieRodiet/learnAtHome',
     },
@@ -42,17 +45,33 @@ export default function ProjectsSection() {
       img: LesPetitsPlats,
       name: 'Les Petits Plats',
       description:
-        'Web application with a couple of search algorithms created in order to filter recipes in multiple ways',
-      tags: ['JSBENCH', 'ACCESSIBILITY', 'ALGO', 'BOOTSTRAP'],
+        'This Web application will show you my algorithms skills through the optimized search filters that I created in order to find recipes',
+      tags: ['JSBENCH', 'SEO', 'ES6', 'BOOTSTRAP'],
       url: 'https://github.com/MarieRodiet/Les-Petits-Plats',
     },
     {
       img: Billed,
       name: 'Billed',
       description:
-        'This project is about testing a web application that was coded with old jQuery code and no comment',
+        'This project is about testing a web application that was coded long ago with jQuery code and no comment',
       tags: ['JEST', 'E2E TESTS', 'DEBUGGING'],
       url: 'https://github.com/MarieRodiet/Billed',
+    },
+    {
+      img: Fisheye,
+      name: 'Fisheye',
+      description:
+        'In this web app coded in Vanilla Javascript I used ES6 and the factory design pattern in order to switch the media template depending on to its type (picture or video)',
+      tags: ['ACCESSIBILITY', 'FETCH', 'ESLINT'],
+      url: 'https://github.com/MarieRodiet/Fisheye',
+    },
+    {
+      img: SliderPuzzle,
+      name: 'Slider Puzzle',
+      description:
+        'This is a little game I coded in order to practice DOM manipulation, canvas and logic in Javascript',
+      tags: ['JS', 'CANVAS', 'DOM'],
+      url: 'https://github.com/MarieRodiet/sliderPuzzleRepo',
     },
   ]
   return (

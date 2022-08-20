@@ -8,15 +8,17 @@
   &-resume {
     width: 100%;
     max-width: 120px;
+
     button {
+      cursor: pointer;
       width: 100%;
       margin: 0 auto;
       background-color: $dark;
       color: $light;
       padding: 12px 15px 10px 15px;
-      border-radius: 4px;
-      font-weight: 300;
-      @include typo-size($second_font, map-get($font-sizes, xs));
+      border-radius: 1px;
+      font-weight: 200;
+      @include typo-size($second_font, map-get($font-sizes, xxs));
     }
   }
   &-skills {
