@@ -10,7 +10,6 @@
   }
   &-container {
     &-project {
-      cursor: pointer;
       color: $dark;
       text-decoration: none;
       display: flex;
@@ -29,13 +28,33 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        &-img {
-          width: 100%;
-          height: auto;
-          max-width: 200px;
-          object-fit: cover;
-          border-radius: 5px;
+        &-links {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          &-img {
+            width: 100%;
+            height: auto;
+            max-width: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+          &-linksContainer {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0 10px 0;
+            &-website {
+              background-color: $dark;
+              color: $light;
+              padding: 5px;
+              border-radius: 5px;
+              text-decoration: none;
+              cursor: pointer;
+            }
+          }
         }
+
         &-description {
           text-align: justify;
           width: 100%;
