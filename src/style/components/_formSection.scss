@@ -34,27 +34,6 @@
         height: 200px;
       }
     }
-    &-btn {
-      cursor: pointer;
-      background-color: $dark;
-      color: $light;
-      padding: 7px;
-      border-radius: 5px;
-      width: 100%;
-      max-width: 500px;
-      font-weight: 300;
-      @include typo-size($second_font, map-get($font-sizes, xxs));
-    }
-    &-sentBtn {
-      background-color: $light;
-      color: $dark;
-      padding: 7px;
-      border-radius: 5px;
-      width: 100%;
-      max-width: 500px;
-      font-weight: 400;
-      @include typo-size($second_font, map-get($font-sizes, xs));
-    }
   }
   &-socialMediaContainer {
     display: flex;

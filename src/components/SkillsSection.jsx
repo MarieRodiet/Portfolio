@@ -1,4 +1,5 @@
 import Resume from '../assets/DOCS/MarieMoorePortfolio.pdf'
+import Button from './Button'
 export default function SkillsSection() {
   return (
     <div className="skillsSection">
@@ -9,7 +10,7 @@ export default function SkillsSection() {
         rel="noopener noreferrer"
         download
       >
-        <button type="button">Resume</button>
+        <Button type="button" className="button" content="Resume" />
       </a>
 
       <div className="skillsSection-skills">

@@ -3,6 +3,7 @@ import { send } from 'emailjs-com'
 import { ReactComponent as Github } from '../assets/SVG/github.svg'
 import { ReactComponent as Email } from '../assets/SVG/email.svg'
 import { ReactComponent as LinkedIn } from '../assets/SVG/linkedin.svg'
+import Button from './Button'
 
 export default function FormSection() {
   const [clickedMessageButton, setClickedMessageButton] = useState(false)
@@ -65,15 +66,11 @@ export default function FormSection() {
             onChange={handleChange}
           />
         </div>
-        {clickedMessageButton ? (
-          <button className="formSection-form-sentBtn" type="submit">
-            Thank you for reaching out!
-          </button>
-        ) : (
-          <button className="formSection-form-btn" type="submit">
-            Contact Me
-          </button>
-        )}
+        <Button
+          className="button"
+          type="submit"
+          content={clickedMessageButton ? 'Thanks! 🚀' : 'Contact Me'}
+        />
       </form>
       <div className="formSection-socialMediaContainer">
         <a
