@@ -2,16 +2,26 @@
 }
 
 @mixin box-shadow($x, $y, $blurr) {
-    box-shadow: $x $y $blurr darken($bgd-gray, 20%);
+  box-shadow: $x $y $blurr darken($bgd-gray, 20%);
 }
 
 @mixin typo-size($typo, $size) {
-    font-family: $typo;
-    font-size: $size;
+  font-family: $typo;
+  font-size: $size;
 }
 
 @mixin icon-gradient {
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}
+
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
+  }
 }

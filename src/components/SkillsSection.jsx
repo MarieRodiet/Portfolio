@@ -1,4 +1,4 @@
-import Resume from '../assets/DOCS/MarieMooreResume.jpg'
+import Resume from '../assets/DOCS/MarieMoorePortfolio.pdf'
 export default function SkillsSection() {
   return (
     <div className="skillsSection">

@@ -16,9 +16,26 @@
       background-color: $dark;
       color: $light;
       padding: 12px 15px 10px 15px;
-      border-radius: 1px;
-      font-weight: 200;
-      @include typo-size($second_font, map-get($font-sizes, xxs));
+      border-radius: 5px;
+      font-weight: 300;
+      @include typo-size($second_font, map-get($font-sizes, xs));
+    }
+    button:hover {
+      outline: none;
+      @include keyframes(hover) {
+        0% {
+          transform: scale(1);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+          font-weight: 300;
+        }
+
+        100% {
+          transform: scale(1.02);
+          box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+          font-weight: 400;
+        }
+      }
+      @include animate(hover, 0.8s, infinite, alternate-reverse);
     }
   }
   &-skills {

@@ -1,8 +1,16 @@
 import { slide as Menu } from 'react-burger-menu'
 import { HashLink } from 'react-router-hash-link'
+import { useState } from 'react'
 import logo from '../assets/IMG/MM.png'
 
 export default function Nav() {
+  const [isOpen, setOpen] = useState(false)
+  const handleIsOpen = () => {
+    setOpen(!isOpen)
+  }
+  const handleIsClosed = () => {
+    setOpen(false)
+  }
   return (
     <div>
       <nav className="nav">
@@ -41,8 +49,9 @@ export default function Nav() {
         </ul>
       </nav>
       <div className="burger-nav">
-        <Menu>
+        <Menu onOpen={handleIsOpen} onClose={handleIsClosed} isOpen={isOpen}>
           <HashLink
+            onClick={handleIsClosed}
             smooth
             className="menu-item"
             to="#aboutme"
@@ -53,6 +62,7 @@ export default function Nav() {
             About Me
           </HashLink>
           <HashLink
+            onClick={handleIsClosed}
             smooth
             className="menu-item"
             to="#projects"
@@ -63,6 +73,7 @@ export default function Nav() {
             Projects
           </HashLink>
           <HashLink
+            onClick={handleIsClosed}
             smooth
             className="menu-item"
             to="#contactme"

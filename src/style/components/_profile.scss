@@ -7,11 +7,11 @@
     &-name {
       font-weight: 100;
       width: 300px;
-      @include typo-size($main_font, map-get($font-sizes, xl));
+      @include typo-size($main_font, map-get($font-sizes, sxl));
     }
     &-intro {
       width: 100%;
-      padding-top: 20px;
+      padding-top: 30px;
       line-height: 1.1;
       font-weight: 300;
       @include typo-size($second_font, map-get($font-sizes, xs));

@@ -1,4 +1,3 @@
-// import { useForm } from 'react-hook-form'
 import { useState } from 'react'
 import { send } from 'emailjs-com'
 import { ReactComponent as Github } from '../assets/SVG/github.svg'
@@ -6,24 +5,24 @@ import { ReactComponent as Email } from '../assets/SVG/email.svg'
 import { ReactComponent as LinkedIn } from '../assets/SVG/linkedin.svg'
 
 export default function FormSection() {
+  const [clickedMessageButton, setClickedMessageButton] = useState(false)
   const [toSend, setToSend] = useState({
     from_name: '',
     message: '',
     reply_to: '',
   })
-  //   const { register, handleSubmit } = useForm()
   const onSubmit = (e) => {
     e.preventDefault()
     send('service_dyz2255', 'template_cqdshuy', toSend, 'v6m1Gves3KCpgNMLl')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text)
+        setClickedMessageButton(!clickedMessageButton)
       })
       .catch((err) => {
         console.error('FAILED...', err)
       })
   }
   const handleChange = (e) => {
-    console.log(e)
     setToSend({ ...toSend, [e.target.name]: e.target.value })
   }
   return (
@@ -38,7 +37,6 @@ export default function FormSection() {
             type="text"
             name="from_name"
             placeholder="First and Last name"
-            // {...register('name', { required: true })}
             value={toSend.from_name}
             onChange={handleChange}
           />
@@ -51,7 +49,6 @@ export default function FormSection() {
             type="email"
             name="reply_to"
             placeholder="youremail@gmail.com"
-            // {...register('email', { required: true })}
             value={toSend.reply_to}
             onChange={handleChange}
           />
@@ -64,14 +61,19 @@ export default function FormSection() {
             type="text"
             name="message"
             placeholder="Message"
-            // {...register('message', { required: true })}
             value={toSend.message}
             onChange={handleChange}
           />
         </div>
-        <button className="formSection-form-btn" type="submit">
-          Contact Me
-        </button>
+        {clickedMessageButton ? (
+          <button className="formSection-form-sentBtn" type="submit">
+            Thank you for reaching out!
+          </button>
+        ) : (
+          <button className="formSection-form-btn" type="submit">
+            Contact Me
+          </button>
+        )}
       </form>
       <div className="formSection-socialMediaContainer">
         <a

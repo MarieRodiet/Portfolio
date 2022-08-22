@@ -13,7 +13,7 @@ export default function ProjectsSection() {
       img: ArgentBank,
       name: 'ArgentBank',
       description:
-        'This project is linked to a Backend API accessed through different HTTP requests. Authentificating the user, storing the token along with fetching and modifying the data were the main focus of this project. Some documentation with Swagger and some initial testing of the API with Postman made it extra fun',
+        'This project is linked to a Backend API accessed through POST and PUT HTTP requests. Authentificating the user, storing the token along with fetching and modifying his/her data were the main focus of this project. Some documentation with Swagger and some initial testing of the API with Postman made it extra fun',
       tags: ['REACT', 'REDUX', 'SWAPPER', 'POSTMAN'],
       url: 'https://github.com/MarieRodiet/argentBank-Front',
     },
@@ -21,24 +21,24 @@ export default function ProjectsSection() {
       img: SportSee,
       name: 'Sportsee',
       description:
-        'This app fetchs data and converts it into amazing graphs. I used the factory pattern (see pages/App.js) to change the url in order to change where the data is fetch from (local server or json file within the root folder)',
-      tags: ['HTML', 'SASS', 'RECHARTS', 'REACT'],
+        'This app fetches data and converts it into amazing looking graphs. I used the factory pattern (see pages/App.js) to simplify the process of bringing in data from different locations. A single boolean is responsible for getting the right URL through which the data is going to be fetched => either from a local server or from a json file located within the root folder',
+      tags: ['API', 'SASS', 'RECHARTS', 'REACT'],
       url: 'https://github.com/MarieRodiet/sportsee_front',
     },
     {
       img: Kasa,
       name: 'Kasa',
       description:
-        'This Web application uses React and fetchs data from a json file. It uses react router, hooks along with some sass to style all that ',
-      tags: ['REACT', 'JSON', 'RESPONSIVE', '404'],
+        'This Web application uses React and fetchs data from a local json file. It uses react router, hooks along with some sass to style all that ',
+      tags: ['REACT', 'JSON', 'RESPONSIVE', 'JSX'],
       url: 'https://github.com/MarieRodiet/kasa',
     },
     {
       img: LearnAtHome,
       name: 'Learn@Home',
       description:
-        "This little but challenging project involves understanding the client's needs in order to write precise documentation, then create the mockup and finally come up with a beautiful and professional design",
-      tags: ['AGILE', 'FIGMA', 'UI/UX'],
+        "This little but challenging project involves understanding the client's needs of a website and write precise documentation such as Use Cases and User Stories. The next step of the project was to create the mockup and transform it into a beautiful and professional design",
+      tags: ['AGILE', 'FIGMA', 'UI/UX', 'DOC'],
       url: 'https://github.com/MarieRodiet/learnAtHome',
     },
     {
