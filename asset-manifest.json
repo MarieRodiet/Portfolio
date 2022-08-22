@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.03b6b29a.css",
-    "main.js": "/portfolio/static/js/main.9d486e27.js",
+    "main.css": "/portfolio/static/css/main.619d84c8.css",
+    "main.js": "/portfolio/static/js/main.11c86e44.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/profile-picture.png": "/portfolio/static/media/profile-picture.44a7b373db7846ded0e1.png",
     "static/media/kasa.png": "/portfolio/static/media/kasa.4f4cc86a5b184f8b239e.png",
-    "static/media/Fisheye.png": "/portfolio/static/media/Fisheye.3f33a569dfd06f1d15ec.png",
+    "static/media/ohmyfood.png": "/portfolio/static/media/ohmyfood.b76ef8a25bb394ed9b43.png",
+    "static/media/fisheye.png": "/portfolio/static/media/fisheye.3f33a569dfd06f1d15ec.png",
+    "static/media/booki.png": "/portfolio/static/media/booki.259ee5487aefba50b126.png",
     "static/media/argentbank.png": "/portfolio/static/media/argentbank.95dc2597dce03d66b259.png",
     "static/media/learnathome.png": "/portfolio/static/media/learnathome.aaebe92ba4e1fc7c35d0.png",
     "static/media/MarieMoorePortfolio.pdf": "/portfolio/static/media/MarieMoorePortfolio.0a9db9a59f61c4ed4dfe.pdf",
     "static/media/lespetitsplats.png": "/portfolio/static/media/lespetitsplats.63c64f73fc55c3ceeb00.png",
-    "static/media/SliderPuzzle.png": "/portfolio/static/media/SliderPuzzle.602efdac0eb28bb63c82.png",
+    "static/media/sliderpuzzle.png": "/portfolio/static/media/sliderpuzzle.602efdac0eb28bb63c82.png",
     "static/media/sportsee.png": "/portfolio/static/media/sportsee.48009f42365caf9b3731.png",
     "static/media/billed.png": "/portfolio/static/media/billed.6310832287948e84a749.png",
     "static/media/MM.png": "/portfolio/static/media/MM.bb550626447321c0f152.png",
@@ -20,12 +22,12 @@
     "static/media/sun.svg": "/portfolio/static/media/sun.4f202eaec73ceeb5c2612e3fd0bcc567.svg",
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.f2f7d420f8ec14109e65abad03b5f32c.svg",
     "static/media/moon.svg": "/portfolio/static/media/moon.24663276c05fe9e5c5d44c7b22966454.svg",
-    "main.03b6b29a.css.map": "/portfolio/static/css/main.03b6b29a.css.map",
-    "main.9d486e27.js.map": "/portfolio/static/js/main.9d486e27.js.map",
+    "main.619d84c8.css.map": "/portfolio/static/css/main.619d84c8.css.map",
+    "main.11c86e44.js.map": "/portfolio/static/js/main.11c86e44.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.03b6b29a.css",
-    "static/js/main.9d486e27.js"
+    "static/css/main.619d84c8.css",
+    "static/js/main.11c86e44.js"
   ]
 }
