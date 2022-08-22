@@ -34,6 +34,7 @@ export default function ProjectsSection() {
         'This Web application uses React and fetchs data from a local json file. It uses react router, hooks along with some sass to style all that ',
       tags: ['REACT', 'JSON', 'RESPONSIVE', 'JSX'],
       url: 'https://github.com/MarieRodiet/kasa',
+      webside: 'https://marierodiet.github.io/kasa/',
     },
     {
       img: LearnAtHome,
@@ -144,7 +145,6 @@ export default function ProjectsSection() {
                 ))}
               </div>
             </div>
-            {/* //   </a> */}
           </div>
         ))}
       </div>
