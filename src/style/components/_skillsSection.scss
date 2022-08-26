@@ -23,9 +23,6 @@
     &-resume {
       width: 100%;
       max-width: 140px;
-      button {
-        @include typo-size($second_font, map-get($font-sizes, s));
-      }
     }
     &-skills {
       max-width: 550px;
@@ -42,9 +39,6 @@
     &-resume {
       width: 100%;
       max-width: 200px;
-      button {
-        @include typo-size($second_font, map-get($font-sizes, sl));
-      }
     }
     &-skills {
       max-width: 750px;

@@ -9,6 +9,9 @@
   border-radius: 5px;
   font-weight: 300;
   @include typo-size($second_font, map-get($font-sizes, xs));
+  @media (min-width: map-get($breakpoints, tablet)) {
+    @include typo-size($second_font, map-get($font-sizes, s));
+  }
 }
 .button:hover {
   outline: none;
@@ -16,13 +19,11 @@
     0% {
       transform: scale(1);
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-      font-weight: 300;
     }
 
     100% {
       transform: scale(1.02);
       box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-      font-weight: 400;
     }
   }
   @include animate(hover, 0.8s, infinite, alternate-reverse);

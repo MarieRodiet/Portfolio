@@ -34,7 +34,7 @@
           align-items: center;
           &-img {
             width: 100%;
-            height: auto;
+            height: 100%;
             max-width: 200px;
             object-fit: cover;
             border-radius: 5px;
@@ -47,26 +47,14 @@
             &-website {
               background-color: $dark;
               color: $light;
-              padding: 7px;
+              padding: 7px 12px;
               border-radius: 15px;
               text-decoration: none;
               cursor: pointer;
+              margin: 0 2px;
             }
             &-website:hover {
-              @include keyframes(hover) {
-                0% {
-                  transform: scale(1);
-                  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-                  font-weight: 300;
-                }
-
-                100% {
-                  transform: scale(1.02);
-                  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-                  font-weight: 400;
-                }
-              }
-              @include animate(hover, 0.8s, infinite, alternate-reverse);
+              background-color: red;
             }
           }
         }

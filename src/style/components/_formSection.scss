@@ -29,6 +29,7 @@
       input::placeholder,
       textarea::placeholder {
         @include typo-size($second_font, map-get($font-sizes, xxs));
+        font-weight: 300;
       }
       textarea {
         height: 200px;

@@ -85,8 +85,8 @@ export default function ProjectsSection({ isEnglish }) {
     {
       img: Booki,
       name: 'Booki',
-      fr: 'Ce site web tout simple hébergé sur cPanel a été codé en HTML et CSS sans aucune librairie',
-      en: 'This is a simple website coded in HTML and CSS and hosted on cPanel.',
+      fr: "Ce site web tout simple hébergé sur cPanel a été codé en HTML et CSS sans aucune librairie. Il a est (comme tous mes sites web!) responsive. Toutefois, il a la particularité d'avoir été le premier codé en Mobile First. J'ai désormais adopté cette manière de faire du responsive. ",
+      en: 'This is a simple website coded in HTML and CSS and hosted on cPanel. Like all other websites here, it is fully responsive. Booki is the first project on which I tested doing Mobile First responsive. I have not switch back to Desktop First ever since!',
       tags: ['HTML', 'CSS', 'SEO'],
       url: 'https://github.com/MarieRodiet/Booki',
       website: 'http://mariemoore.site/Booki/',

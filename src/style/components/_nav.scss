@@ -7,6 +7,7 @@
   border: none;
   font-size: 1em;
   cursor: pointer;
+  transition: 300ms linear;
   @media (min-width: map-get($breakpoints, tablet)) {
     top: 45px;
     right: 6%;
