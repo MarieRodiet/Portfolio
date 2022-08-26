@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types'
 
-export default function Button(props) {
+export default function Button({ buttonText }) {
   return (
     <button type="submit" className="button">
-      {props.content}
+      {buttonText}
     </button>
   )
 }
 
 Button.propTypes = {
-  content: PropTypes.string,
+  buttonText: PropTypes.string,
 }

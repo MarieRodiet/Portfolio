@@ -1,3 +1,26 @@
+#language-toggle {
+  background-color: $light;
+  position: absolute;
+  right: 36px;
+  top: 36px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  @media (min-width: map-get($breakpoints, tablet)) {
+    top: 45px;
+    right: 6%;
+    font-size: 1.2em;
+  }
+  @media (min-width: map-get($breakpoints, desktop)) {
+    font-size: 1.5em;
+    top: 45px;
+    right: 6%;
+  }
+}
+#language-toggle:hover {
+  transform: scale(1.2);
+}
 .nav {
   display: none;
 
@@ -22,13 +45,19 @@
       &-link {
         text-decoration: none;
         color: $dark;
+        margin: 0 -0.25rem;
+        padding: 0 0.25rem;
+        box-shadow: inset 0 0 0 0 $dark;
+        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
       }
     }
     &-links:hover {
       cursor: pointer;
     }
     &-links-link:hover {
-      color: lighten($dark, 20%);
+      box-shadow: inset 220px 0 0 0 $dark;
+      //   color: lighten($dark, 20%);
+      color: $light;
     }
   }
 
@@ -38,7 +67,7 @@
       max-width: 120px;
     }
     &-links {
-      @include typo-size($main_font, map-get($font-sizes, l));
+      @include typo-size($main_font, map-get($font-sizes, sl));
     }
   }
 }

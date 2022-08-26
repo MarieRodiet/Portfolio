@@ -1,9 +1,10 @@
 import { slide as Menu } from 'react-burger-menu'
 import { HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
+import { PropTypes } from 'prop-types'
 import logo from '../assets/IMG/MM.png'
 
-export default function Nav() {
+export default function Nav({ handleLanguageChange, isEnglish }) {
   const [isOpen, setOpen] = useState(false)
   const handleIsOpen = () => {
     setOpen(!isOpen)
@@ -11,8 +12,12 @@ export default function Nav() {
   const handleIsClosed = () => {
     setOpen(false)
   }
+
   return (
     <div>
+      <button id="language-toggle" onClick={handleLanguageChange} type="button">
+        {isEnglish ? '🇫🇷' : '🇬🇧'}
+      </button>
       <nav className="nav">
         <img src={logo} alt="Marie Moore logo" className="nav-logo" />
         <ul className="nav-links">
@@ -24,7 +29,7 @@ export default function Nav() {
               el.scrollIntoView({ behavior: 'auto', block: 'end' })
             }
           >
-            About Me
+            {isEnglish ? 'About Me' : 'A Propos'}
           </HashLink>
           <HashLink
             smooth
@@ -34,7 +39,7 @@ export default function Nav() {
               el.scrollIntoView({ behavior: 'auto', block: 'end' })
             }
           >
-            Projects
+            {isEnglish ? 'Projects' : 'Projets'}
           </HashLink>
           <HashLink
             smooth
@@ -44,7 +49,7 @@ export default function Nav() {
               el.scrollIntoView({ behavior: 'auto', block: 'end' })
             }
           >
-            Contact Me
+            {isEnglish ? 'Contact Me' : 'Contact'}
           </HashLink>
         </ul>
       </nav>
@@ -59,7 +64,7 @@ export default function Nav() {
               el.scrollIntoView({ behavior: 'auto', block: 'end' })
             }
           >
-            About Me
+            {isEnglish ? 'About Me' : 'A Propos'}
           </HashLink>
           <HashLink
             onClick={handleIsClosed}
@@ -70,7 +75,7 @@ export default function Nav() {
               el.scrollIntoView({ behavior: 'auto', block: 'end' })
             }
           >
-            Projects
+            {isEnglish ? 'Projects' : 'Projets'}
           </HashLink>
           <HashLink
             onClick={handleIsClosed}
@@ -81,10 +86,15 @@ export default function Nav() {
               el.scrollIntoView({ behavior: 'auto', block: 'end' })
             }
           >
-            Contact Me
+            {isEnglish ? 'Contact Me' : 'Contact'}
           </HashLink>
         </Menu>
       </div>
     </div>
   )
+}
+
+Nav.propTypes = {
+  handleLanguageChange: PropTypes.func,
+  isEnglish: PropTypes.bool,
 }
