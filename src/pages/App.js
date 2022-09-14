@@ -7,9 +7,13 @@ import SkillsSection from '../components/SkillsSection'
 import Footer from '../components/Footer'
 import ProjectsSection from '../components/ProjectsSection'
 import FormSection from '../components/FormSection'
+import { ReactComponent as Sun } from '../assets/SVG/sun.svg'
+import { ReactComponent as Moon } from '../assets/SVG/moon.svg'
+import SocialMedia from '../components/SocialMedia'
 
 function App() {
   const [isEnglish, toggleLanguage] = useState(true)
+  const [isLightTheme, setLightTheme] = useState(true)
   const handleLanguageChange = () => {
     toggleLanguage(!isEnglish)
   }
@@ -24,7 +28,12 @@ function App() {
         <SkillsSection isEnglish={isEnglish} />
         <ProjectsSection isEnglish={isEnglish} />
         <FormSection isEnglish={isEnglish} />
-        <Footer />
+        <SocialMedia />
+        <Footer
+          text="Copyright 2022 Marie Moore"
+          SVG={isLightTheme ? <Sun /> : <Moon />}
+          onClick={() => setLightTheme(!isLightTheme)}
+        />
       </HashRouter>
     </div>
   )

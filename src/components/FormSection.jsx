@@ -1,9 +1,6 @@
 import { useState } from 'react'
 import { send } from 'emailjs-com'
 import { PropTypes } from 'prop-types'
-import { ReactComponent as Github } from '../assets/SVG/github.svg'
-import { ReactComponent as Email } from '../assets/SVG/email.svg'
-import { ReactComponent as LinkedIn } from '../assets/SVG/linkedin.svg'
 import Button from './Button'
 
 export default function FormSection({ isEnglish }) {
@@ -31,12 +28,11 @@ export default function FormSection({ isEnglish }) {
   const onSubmit = (e) => {
     e.preventDefault()
     send('service_dyz2255', 'template_cqdshuy', toSend, 'v6m1Gves3KCpgNMLl')
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text)
+      .then(() => {
         setClickedMessageButton(!clickedMessageButton)
       })
       .catch((err) => {
-        console.error('FAILED...', err)
+        throw err
       })
   }
   const handleChange = (e) => {
@@ -86,24 +82,6 @@ export default function FormSection({ isEnglish }) {
         </div>
         <Button className="button" type="submit" buttonText={buttonText()} />
       </form>
-      <div className="formSection-socialMediaContainer">
-        <a
-          href="https://github.com/MarieRodiet"
-          target="_blank"
-          aria-label="github link"
-        >
-          <Github className="formSection-socialMediaContainer-link" />
-        </a>
-        <a href="mailto:marie.rodiet@gmail.com" aria-label="email me">
-          <Email className="formSection-socialMediaContainer-link" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/marie-rodiet-moore/"
-          aria-label="linkedin link"
-        >
-          <LinkedIn className="formSection-socialMediaContainer-link" />
-        </a>
-      </div>
     </div>
   )
 }

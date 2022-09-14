@@ -2,23 +2,11 @@ import { PropTypes } from 'prop-types'
 import FRResume from '../assets/DOCS/MarieMooreFR.pdf'
 import ENResume from '../assets/DOCS/MarieMooreEN.pdf'
 import Button from './Button'
+import { skills } from '../data/skills'
 
 export default function SkillsSection({ isEnglish }) {
   const buttonText = isEnglish ? 'Resume' : 'CV'
-  const skills = [
-    'HTML',
-    'CSS',
-    'SASS',
-    'JAVASCRIPT',
-    'TYPESCRIPT',
-    'REACT',
-    'REDUX',
-    'FIGMA',
-    'GIT',
-    'TESTS',
-    'RESPONSIVE',
-    'ACCESSIBILITY',
-  ]
+
   return (
     <div className="skillsSection">
       <a
