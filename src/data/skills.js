@@ -17,4 +17,6 @@ export const skills = [
   'OOP',
   'ES6',
   'ALGORYTHMS',
+  'PERFORMANCE',
+  'STORYBOOK',
 ]

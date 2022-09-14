@@ -5,15 +5,15 @@ import { profile } from '../data/profile'
 
 export default function SocialMedia() {
   return (
-    <div className="formSection-socialMediaContainer">
+    <div className="socialMediaContainer">
       <a href={profile.github} target="_blank" aria-label="github link">
-        <Github className="formSection-socialMediaContainer-link" />
+        <Github className="socialMediaContainer-link" />
       </a>
       <a href={profile.email} aria-label="email me">
-        <Email className="formSection-socialMediaContainer-link" />
+        <Email className="socialMediaContainer-link" />
       </a>
       <a href={profile.linkedIn} aria-label="linkedin link">
-        <LinkedIn className="formSection-socialMediaContainer-link" />
+        <LinkedIn className="socialMediaContainer-link" />
       </a>
     </div>
   )

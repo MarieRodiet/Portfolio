@@ -1,0 +1,14 @@
+.socialMediaContainer {
+  background-color: $light;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 30%;
+  &-link {
+    width: 40px;
+  }
+  &-link:hover {
+    fill: $red;
+  }
+}

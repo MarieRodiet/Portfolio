@@ -7,8 +7,7 @@ import SkillsSection from '../components/SkillsSection'
 import Footer from '../components/Footer'
 import ProjectsSection from '../components/ProjectsSection'
 import FormSection from '../components/FormSection'
-import { ReactComponent as Sun } from '../assets/SVG/sun.svg'
-import { ReactComponent as Moon } from '../assets/SVG/moon.svg'
+
 import SocialMedia from '../components/SocialMedia'
 
 function App() {
@@ -16,6 +15,10 @@ function App() {
   const [isLightTheme, setLightTheme] = useState(true)
   const handleLanguageChange = () => {
     toggleLanguage(!isEnglish)
+  }
+
+  const handleTheme = () => {
+    setLightTheme(!isLightTheme)
   }
   return (
     <div className="App" id="outer-container">
@@ -31,8 +34,8 @@ function App() {
         <SocialMedia />
         <Footer
           text="Copyright 2022 Marie Moore"
-          SVG={isLightTheme ? <Sun /> : <Moon />}
-          onClick={() => setLightTheme(!isLightTheme)}
+          isLightTheme={isLightTheme}
+          handleTheme={handleTheme}
         />
       </HashRouter>
     </div>
