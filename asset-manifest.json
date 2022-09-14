@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.af8f80d7.css",
-    "main.js": "/static/js/main.6bc65b54.js",
+    "main.css": "/static/css/main.347a374a.css",
+    "main.js": "/static/js/main.be9a4ed0.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/profile-picture.png": "/static/media/profile-picture.44a7b373db7846ded0e1.png",
     "static/media/healthwealth.png": "/static/media/healthwealth.cc78b70430fe37342349.png",
@@ -24,12 +24,12 @@
     "static/media/sun.svg": "/static/media/sun.4f202eaec73ceeb5c2612e3fd0bcc567.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.f2f7d420f8ec14109e65abad03b5f32c.svg",
     "static/media/moon.svg": "/static/media/moon.24663276c05fe9e5c5d44c7b22966454.svg",
-    "main.af8f80d7.css.map": "/static/css/main.af8f80d7.css.map",
-    "main.6bc65b54.js.map": "/static/js/main.6bc65b54.js.map",
+    "main.347a374a.css.map": "/static/css/main.347a374a.css.map",
+    "main.be9a4ed0.js.map": "/static/js/main.be9a4ed0.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.af8f80d7.css",
-    "static/js/main.6bc65b54.js"
+    "static/css/main.347a374a.css",
+    "static/js/main.be9a4ed0.js"
   ]
 }
