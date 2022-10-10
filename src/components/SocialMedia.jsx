@@ -9,10 +9,10 @@ export default function SocialMedia() {
       <a href={profile.github} target="_blank" aria-label="github link">
         <Github className="socialMediaContainer-link" />
       </a>
-      <a href={profile.email} aria-label="email me">
+      <a href={profile.email} target="_blank" aria-label="email me">
         <Email className="socialMediaContainer-link" />
       </a>
-      <a href={profile.linkedIn} aria-label="linkedin link">
+      <a href={profile.linkedIn} target="_blank" aria-label="linkedin link">
         <LinkedIn className="socialMediaContainer-link" />
       </a>
     </div>

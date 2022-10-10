@@ -26,7 +26,7 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             className="nav-links-link"
             to="#aboutme"
             scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+              el.scrollIntoView({ behavior: 'auto', block: 'start' })
             }
           >
             {isEnglish ? 'About Me' : 'A Propos'}
@@ -36,7 +36,7 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             className="nav-links-link"
             to="#projects"
             scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+              el.scrollIntoView({ behavior: 'auto', block: 'start' })
             }
           >
             {isEnglish ? 'Projects' : 'Projets'}
@@ -46,7 +46,7 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             className="nav-links-link"
             to="#contactme"
             scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+              el.scrollIntoView({ behavior: 'auto', block: 'start' })
             }
           >
             {isEnglish ? 'Contact Me' : 'Contact'}
@@ -61,7 +61,7 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             className="menu-item"
             to="#aboutme"
             scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+              el.scrollIntoView({ behavior: 'auto', block: 'start' })
             }
           >
             {isEnglish ? 'About Me' : 'A Propos'}
@@ -72,7 +72,7 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             className="menu-item"
             to="#projects"
             scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+              el.scrollIntoView({ behavior: 'auto', block: 'start' })
             }
           >
             {isEnglish ? 'Projects' : 'Projets'}
@@ -83,7 +83,7 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             className="menu-item"
             to="#contactme"
             scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'end' })
+              el.scrollIntoView({ behavior: 'auto', block: 'start' })
             }
           >
             {isEnglish ? 'Contact Me' : 'Contact'}

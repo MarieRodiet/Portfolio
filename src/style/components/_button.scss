@@ -9,6 +9,19 @@
   border-radius: 5px;
   font-weight: 300;
   @include typo-size($second_font, map-get($font-sizes, xs));
+  &-check {
+    width: 18px;
+    fill: white;
+    @include keyframes(rotate) {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+    @include animate(rotate, 0.8s, linear, infinite);
+  }
   @media (min-width: map-get($breakpoints, tablet)) {
     @include typo-size($second_font, map-get($font-sizes, s));
   }
@@ -27,4 +40,9 @@
     }
   }
   @include animate(hover, 0.8s, infinite, alternate-reverse);
+}
+
+.button:disabled {
+  background-color: $red;
+  cursor: default;
 }

@@ -2,8 +2,8 @@ import { PropTypes } from 'prop-types'
 import { projects } from '../data/projects'
 export default function ProjectsSection({ isEnglish }) {
   return (
-    <section className="projectsSection" id="projects">
-      <h1 className="projectsSection-title">
+    <section className="projectsSection">
+      <h1 className="projectsSection-title" id="projects">
         {isEnglish ? 'Projects' : 'Projets'}
       </h1>
       <div className="projectsSection-container">

@@ -14,8 +14,8 @@ export const projects = [
   {
     img: Healthwealth,
     name: 'Healthwealth',
-    fr: "Cette application web est encore en construction. Le but dans les prochains jour est de créer, publier et utiliser mes propres librairies de composents React. La Modale qui s'affiche pour confirmer l'enregistrement des données ainsi que le tableau et ses fonctionnalités sont mes futurs composents. Il me reste également à faire des audits de performance et à passer la soutenance. Veuillez noter que pour éviter de vous faire inscrire des employeés manuellement et pour pouvoir tester la fonctionnalité du réaffichage du tableau, j'ai utilisé une liste d'employées fictifs. Avec plaisir!",
-    en: 'This web application is still in the process of being coded. My goal in the next few days is to create, publish and consume my own react component libraries. The pop-up confirming that the form was successfully submitted as well as the table rendering all the employees are the component libraries to-be. I also need to do some performance test with Lighthouse and pass the soutenance. Please keep in mind that I have added fictious employee data to the table in order to save your time and energy from manually entering it. This way you can test the functionalities of my table. You are welcome!',
+    fr: 'Cette application web est encore en contruction. Il me reste à faire des audits de performance avec Lighthouse et installer un backend avec Nodejs, Express et Mongoose DB!',
+    en: 'This web application is still in the process of being coded. My goal in the next few days is to create a backend with Nodejs, Express and Mongoose DB as well as doing some performance tests with Lighthouse.',
     tags: ['REACT', 'NPM', 'LIGHTHOUSE', 'ALGO'],
     website: 'https://marierodiet.github.io/wealthhealth/',
     url: 'https://github.com/MarieRodiet/wealthhealth',

@@ -10,6 +10,7 @@ export default function FormSection({ isEnglish }) {
     message: '',
     reply_to: '',
   })
+  const [loading, setLoading] = useState(false)
 
   const buttonText = () => {
     if (clickedMessageButton) {
@@ -26,10 +27,12 @@ export default function FormSection({ isEnglish }) {
   }
 
   const onSubmit = (e) => {
+    setLoading(true)
     e.preventDefault()
     send('service_dyz2255', 'template_cqdshuy', toSend, 'v6m1Gves3KCpgNMLl')
       .then(() => {
         setClickedMessageButton(!clickedMessageButton)
+        setLoading(false)
       })
       .catch((err) => {
         throw err
@@ -80,7 +83,13 @@ export default function FormSection({ isEnglish }) {
             onChange={handleChange}
           />
         </div>
-        <Button className="button" type="submit" buttonText={buttonText()} />
+        <Button
+          className="button"
+          type="submit"
+          buttonText={buttonText()}
+          isSent={clickedMessageButton}
+          loading={loading}
+        />
       </form>
     </div>
   )
