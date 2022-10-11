@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.9bb311bb.css",
-    "main.js": "/static/js/main.a2e0ae4e.js",
+    "main.js": "/static/js/main.ca243945.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/sliderpuzzle.png": "/static/media/sliderpuzzle.e62fd30784b88c56c68b.png",
     "static/media/profile-picture.png": "/static/media/profile-picture.63a58ca91ddc0190f173.png",
-    "static/media/MarieMooreFR.pdf": "/static/media/MarieMooreFR.ba167ee72921e1560229.pdf",
-    "static/media/MarieMooreEN.pdf": "/static/media/MarieMooreEN.6f0222543cb8cf663be4.pdf",
+    "static/media/MarieMooreFR.pdf": "/static/media/MarieMooreFR.b0a33fa6de0f7d7b34f4.pdf",
     "static/media/kasa.png": "/static/media/kasa.895deed06f07a0efd5a3.png",
+    "static/media/MarieMooreEN.pdf": "/static/media/MarieMooreEN.c487c1b553de02a5b24d.pdf",
     "static/media/ohmyfood.png": "/static/media/ohmyfood.9f93804a598589225bae.png",
     "static/media/healthwealth.png": "/static/media/healthwealth.f5f3bda720ab5c60e35a.png",
     "static/media/booki.png": "/static/media/booki.d6773a840c12637f23e5.png",
     "static/media/fisheye.png": "/static/media/fisheye.c805005125ea54dd1275.png",
     "static/media/learnathome.png": "/static/media/learnathome.90a99f99ff1b5255e3a5.png",
     "static/media/lespetitsplats.png": "/static/media/lespetitsplats.a7e8faf9f5135c3a6391.png",
+    "static/media/table.png": "/static/media/table.651e37970ff40c6f3c3c.png",
     "static/media/argentbank.png": "/static/media/argentbank.8b9d204681431acd613b.png",
     "static/media/sportsee.png": "/static/media/sportsee.198b1600b4da599a0799.png",
     "index.html": "/index.html",
@@ -24,11 +25,11 @@
     "static/media/moon.svg": "/static/media/moon.24663276c05fe9e5c5d44c7b22966454.svg",
     "static/media/check-solid.svg": "/static/media/check-solid.d77a6106b69459fb02faabc5c2925156.svg",
     "main.9bb311bb.css.map": "/static/css/main.9bb311bb.css.map",
-    "main.a2e0ae4e.js.map": "/static/js/main.a2e0ae4e.js.map",
+    "main.ca243945.js.map": "/static/js/main.ca243945.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9bb311bb.css",
-    "static/js/main.a2e0ae4e.js"
+    "static/js/main.ca243945.js"
   ]
 }
