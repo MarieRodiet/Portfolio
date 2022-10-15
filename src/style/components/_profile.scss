@@ -1,13 +1,13 @@
 .profile {
   padding: 100px 8% 20px 8%;
   background-color: $light;
-  color: $dark;
   &-text {
     max-width: 500px;
     &-name {
       font-weight: 100;
       width: 300px;
       @include typo-size($main_font, map-get($font-sizes, sxl));
+      @include gradient();
     }
     &-intro {
       width: 100%;

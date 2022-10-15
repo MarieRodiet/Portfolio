@@ -9,6 +9,7 @@
   &-header {
     font-weight: 500;
     @include typo-size($main_font, map-get($font-sizes, sl));
+    @include gradient();
   }
   &-form {
     padding: 20px 0;

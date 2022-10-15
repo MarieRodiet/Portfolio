@@ -16,3 +16,14 @@
     @content;
   }
 }
+
+@mixin gradient() {
+  background-color: $light;
+  background: linear-gradient(
+    159deg,
+    rgba(10, 10, 10, 1) 21%,
+    rgba(232, 95, 92, 1) 69%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}

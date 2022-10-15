@@ -6,7 +6,6 @@ export const skills = [
   'TYPESCRIPT',
   'API',
   'REACT',
-  'REACT HOOKS',
   'REDUX',
   'FIGMA',
   'GIT',
@@ -18,5 +17,8 @@ export const skills = [
   'ES6',
   'ALGORYTHMS',
   'PERFORMANCE',
-  'STORYBOOK',
+  'TAILWING CSS',
+  'JSON',
+  'SEO',
+  'FRONT END LIBRARIES',
 ]
