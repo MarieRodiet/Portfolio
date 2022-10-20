@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fc2bf454.css",
-    "main.js": "/portfolio/static/js/main.5db2f4a5.js",
+    "main.css": "/portfolio/static/css/main.5716b7a6.css",
+    "main.js": "/portfolio/static/js/main.cd04f776.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/sliderpuzzle.png": "/portfolio/static/media/sliderpuzzle.e62fd30784b88c56c68b.png",
     "static/media/profile-picture.png": "/portfolio/static/media/profile-picture.63a58ca91ddc0190f173.png",
@@ -24,12 +24,13 @@
     "static/media/linkedin.svg": "/portfolio/static/media/linkedin.f2f7d420f8ec14109e65abad03b5f32c.svg",
     "static/media/moon.svg": "/portfolio/static/media/moon.24663276c05fe9e5c5d44c7b22966454.svg",
     "static/media/check-solid.svg": "/portfolio/static/media/check-solid.d77a6106b69459fb02faabc5c2925156.svg",
-    "main.fc2bf454.css.map": "/portfolio/static/css/main.fc2bf454.css.map",
-    "main.5db2f4a5.js.map": "/portfolio/static/js/main.5db2f4a5.js.map",
+    "static/media/angle-down-solid.svg": "/portfolio/static/media/angle-down-solid.6f7e6929b52e55791ccbbddb1d02afbb.svg",
+    "main.5716b7a6.css.map": "/portfolio/static/css/main.5716b7a6.css.map",
+    "main.cd04f776.js.map": "/portfolio/static/js/main.cd04f776.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc2bf454.css",
-    "static/js/main.5db2f4a5.js"
+    "static/css/main.5716b7a6.css",
+    "static/js/main.cd04f776.js"
   ]
 }
