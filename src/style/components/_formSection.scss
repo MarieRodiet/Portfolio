@@ -77,9 +77,8 @@
       textarea::placeholder {
         @include typo-size($second_font, map-get($font-sizes, s));
       }
-      &-btn {
-        padding: 12px;
-        @include typo-size($second_font, map-get($font-sizes, s));
+      button {
+        margin-top: 20px;
       }
     }
   }

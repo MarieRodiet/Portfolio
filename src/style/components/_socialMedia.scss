@@ -1,14 +1,32 @@
 .socialMediaContainer {
   background-color: $light;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0 auto;
-  width: 100%;
   padding: 0 30%;
   &-link {
-    width: 40px;
+    width: 25px;
+    margin: 0 10px;
   }
   &-link:hover {
     fill: $red;
+  }
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .socialMediaContainer {
+    padding: 0 40%;
+    &-link {
+      width: 30px;
+    }
+  }
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+  .socialMediaContainer {
+    padding: 0 40%;
+    &-link {
+      width: 35px;
+    }
   }
 }

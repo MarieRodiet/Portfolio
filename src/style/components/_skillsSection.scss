@@ -5,31 +5,40 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  &-resume {
+    padding: 40px;
+  }
   &-skills {
     padding: 25px 0;
     width: 90%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    span {
-      padding: 12px;
-      @include typo-size($main_font, map-get($font-sizes, xxs));
-      font-weight: bold;
+    flex-direction: column;
+    &-header {
+      display: flex;
+      justify-content: center;
+      padding: 14px 0;
+      svg {
+        width: 25px;
+        margin: 0 14px;
+      }
+      .svg-down {
+        transform: rotate(180deg);
+      }
+      &-title {
+        text-align: center;
+        @include typo-size($main_font, map-get($font-sizes, sl));
+        @include gradient();
+      }
     }
   }
 }
+
 @media (min-width: map-get($breakpoints, tablet)) {
   .skillsSection {
-    &-resume {
-      width: 100%;
-      max-width: 140px;
-    }
     &-skills {
-      max-width: 550px;
-      span {
-        padding: 12px 14px;
-        @include typo-size($main_font, map-get($font-sizes, xxs));
-        font-weight: bold;
+      &-title {
+        @include typo-size($main_font, map-get($font-sizes, l));
       }
     }
   }
@@ -39,13 +48,6 @@
     &-resume {
       width: 100%;
       max-width: 200px;
-    }
-    &-skills {
-      max-width: 750px;
-      span {
-        padding: 14px 25px;
-        @include typo-size($main_font, map-get($font-sizes, xs));
-      }
     }
   }
 }

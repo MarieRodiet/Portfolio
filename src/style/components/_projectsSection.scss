@@ -4,10 +4,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  &-title {
-    text-align: center;
-    @include typo-size($main_font, map-get($font-sizes, sl));
-    @include gradient();
+  &-header {
+    display: flex;
+    justify-content: center;
+    svg {
+      width: 25px;
+      margin: 0 14px;
+    }
+    .svg-down {
+      transform: rotate(180deg);
+    }
+    &-title {
+      text-align: center;
+      @include typo-size($main_font, map-get($font-sizes, sl));
+      @include gradient();
+    }
   }
   &-container {
     &-project {

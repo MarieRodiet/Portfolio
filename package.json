@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mariemoore.site",
+  "homepage": "https://marierodiet.github.io/portfolio",
   "dependencies": {
     "ajv": "^8.11.0",
     "emailjs-com": "^3.2.0",

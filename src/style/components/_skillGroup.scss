@@ -1,0 +1,67 @@
+.skillGroup-container {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  .skillsGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: dashed $dark 1px;
+    border-radius: 3px;
+    margin: 10px auto;
+    max-width: 240px;
+    width: 100%;
+
+    h3 {
+      margin: 0 auto;
+      font-weight: 400;
+      padding: 5px 0;
+      @include gradient();
+      @include typo-size($second_font, map-get($font-sizes, xs));
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+      span {
+        padding: 5px;
+        color: rgb(62, 62, 62);
+        @include typo-size($main_font, map-get($font-sizes, xxs));
+      }
+    }
+  }
+}
+
+@media (min-width: map-get($breakpoints, tablet)) {
+  .skillGroup-container {
+    justify-content: space-between;
+    .skillsGroup {
+      display: flex;
+      flex-direction: column;
+      padding: 15px 0;
+      h3 {
+        @include gradient();
+        @include typo-size($second_font, map-get($font-sizes, s));
+      }
+
+      &-content {
+        span {
+          @include typo-size($main_font, map-get($font-sizes, xs));
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: map-get($breakpoints, desktop)) {
+  .skillGroup-container {
+    .skillsGroup {
+      &-content {
+        span {
+        }
+      }
+    }
+  }
+}

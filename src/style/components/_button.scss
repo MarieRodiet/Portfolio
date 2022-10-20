@@ -5,10 +5,10 @@
   margin: 0 auto;
   background-color: $dark;
   color: $light;
-  padding: 12px 15px 10px 15px;
+  padding: 10px;
   border-radius: 5px;
   font-weight: 300;
-  @include typo-size($second_font, map-get($font-sizes, xs));
+  @include typo-size($second_font, map-get($font-sizes, xxs));
   &-check {
     width: 18px;
     fill: white;
@@ -23,7 +23,7 @@
     @include animate(rotate, 0.8s, linear, infinite);
   }
   @media (min-width: map-get($breakpoints, tablet)) {
-    @include typo-size($second_font, map-get($font-sizes, s));
+    @include typo-size($second_font, map-get($font-sizes, xs));
   }
 }
 .button:hover {

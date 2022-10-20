@@ -19,11 +19,40 @@
 
 @mixin gradient() {
   background-color: $light;
-  background: linear-gradient(
-    159deg,
-    rgba(10, 10, 10, 1) 21%,
-    rgba(232, 95, 92, 1) 69%
+  background-image: -webkit-linear-gradient(
+    350deg,
+    rgba(232, 95, 92, 1) 0%,
+    rgba(10, 10, 10, 1) 74%
   );
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  background-clip: text;
   -webkit-background-clip: text;
+}
+
+@for $i from 1 through 10 {
+  .skillsbox-#{$i} {
+    animation-delay: 0.2 * $i;
+  }
+}
+
+@keyframes showUpAnimation {
+  0% {
+    opacity: 0;
+    transform-origin: top;
+  }
+  100% {
+    opacity: 1;
+    transform-origin: bottom;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 1;
+    transform-origin: top;
+  }
+  100% {
+    opacity: 0;
+    transform-origin: bottom;
+  }
 }

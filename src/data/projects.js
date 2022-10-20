@@ -24,7 +24,7 @@ export const projects = [
   },
   {
     img: Table,
-    name: 'React Component Library - Data Table',
+    name: 'Data Table Library',
     fr: "Ce package codé en composent React été compilé avec Vite puis testée, documentée et publiée sur NPM. Toutes ces fonctionalités sont incluses: pagination, filtrage et classage des données par ordre ascendant ou descendant. Le package est extrêmement customisable: le choix d'un thème light ou dark, l'affichage de l'index et d'un titre ainsi que la possibilité de selectioner les rangées est optionnel. ",
     en: 'This React Component library was compiled with Vite and fully tested and documented before being published on NPM. It includes: pagination, filtering and sorting of data. It is very customizable: you can choose to add or remove indexing and title, you can change between the dark or light theme and also have the possibility to select/unselect rows.',
     tags: ['REACT', 'NPM', 'VITE', 'TESTING'],
@@ -68,9 +68,9 @@ export const projects = [
   {
     img: LearnAtHome,
     name: 'Learn@Home',
-    fr: "Ce petit projet atypique m'a fait découvrir le monde du Web Design, de ces outils, et surtout de ces défis. Il m'a permis d'aller plus loin en créant la documentation nécessaire au client et à l'équipe de développement: Use Cases, User Stories, les Mockups et enfin les maquettes Figma.",
-    en: "This little but challenging project involves understanding the client's needs of a website and write precise documentation such as Use Cases and User Stories. The next step of the project was to create the mockup and transform it into a beautiful and professional design",
-    tags: ['AGILE', 'FIGMA', 'UI/UX', 'USE CASES'],
+    fr: "Ce petit projet atypique m'a fait découvrir le monde du Web Design, de ces outils, et surtout de l'importance de comprendre les besoins du client et des exigences techniques. Il m'a permis d'aller plus loin en créant la documentation nécessaire comme support de dialogue avec le client et comme guide technique à l'équipe de développement: Use Cases, User Stories, diagrammes, les Mockups et enfin les maquettes Figma.",
+    en: "This little but challenging project helped me discover the world of Web Design, its tools and especially the importance of understanding the client's needs and the technical constraints. It helps me go further in the creation of the necessary documentation with the client and the web developers: Use Cases, User Stories and diagrams as well as the mockups and finally the Figma files.",
+    tags: ['AGILE', 'FIGMA', 'UI/UX', 'DOCUMENTATION'],
     url: 'https://github.com/MarieRodiet/learnAtHome',
     website:
       'https://www.figma.com/file/9Ch3Q6IListIcm51rcarKX/Learn%40Home?node-id=20%3A618',
@@ -89,7 +89,7 @@ export const projects = [
     name: 'Billed',
     fr: "Les tests unitaires, tests d'intégration et E2E liés au déboguage ont permis de faire de moi une arme redoutable contre les bugs. Mon travail consistait à écrire des tests pour une application déja existante et à corriger ses bugs.",
     en: 'This project is about testing a web application that was coded long ago with jQuery code and no comment. You will need to install the back end (See readme file) on your machine to make my app work!',
-    tags: ['JEST', 'E2E TESTS', 'DEBUGGING', 'JQUERY'],
+    tags: ['JEST', 'TESTS', 'DEBUGGING', 'JQUERY'],
     url: 'https://github.com/MarieRodiet/Billed',
   },
   {
@@ -124,7 +124,7 @@ export const projects = [
     name: 'Oh My Food',
     fr: "Ohmyfood est un projet qui m'a fait découvrir des animations plus complexes en CSS et aussi la fameuse librairie SASS! Deux coups de coeur d'un site que j'ai hébergés sur cPanel également.",
     en: 'This is my first project using Sass and creating fancier animations with CSS. This site is also hosted on cPanel.',
-    tags: ['GIT', 'SASS', 'ANIMATION', 'cPanel GUI'],
+    tags: ['GIT', 'SASS', 'ANIMATION', 'cPanel'],
     url: 'https://github.com/MarieRodiet/OhMyFood',
     website: 'http://mariemoore.site/ohmyfood/',
   },
