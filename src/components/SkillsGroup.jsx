@@ -2,7 +2,7 @@ import { PropTypes } from 'prop-types'
 
 export default function SkillsGroup({ skillObject, isEnglish, index }) {
   return (
-    <div className={`skillsGroup showUp skillsbox-${index}`}>
+    <div className={`skillsGroup skillsbox-${index}`}>
       <h3>{isEnglish ? skillObject.en : skillObject.fr}</h3>
       <div className="skillsGroup-content">
         {skillObject.skills.map((el) => (

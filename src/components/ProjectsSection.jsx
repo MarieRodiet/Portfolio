@@ -4,7 +4,7 @@ import { projects } from '../data/projects'
 import { ReactComponent as Arrow } from '../assets/SVG/angle-down-solid.svg'
 
 export default function ProjectsSection({ isEnglish }) {
-  const [toggled, updateToggle] = useState(true)
+  const [toggled, updateToggle] = useState(false)
   return (
     <section className="projectsSection">
       <div className="projectsSection-header">
@@ -23,7 +23,7 @@ export default function ProjectsSection({ isEnglish }) {
           {projects.map((p, i) => (
             <div
               key={`${`${i} home page ${p.name}`}`}
-              className="projectsSection-container-project showUp"
+              className="projectsSection-container-project"
             >
               <h2 className="projectsSection-container-project-name">
                 {p.name}

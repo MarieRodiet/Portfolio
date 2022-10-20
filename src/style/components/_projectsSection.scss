@@ -21,6 +21,7 @@
     }
   }
   &-container {
+    @include showUp();
     &-project {
       color: $dark;
       text-decoration: none;
@@ -64,9 +65,11 @@
               text-decoration: none;
               cursor: pointer;
               margin: 0 2px;
+              @include button();
             }
             &-website:hover {
               background-color: $red;
+              @include gradientHover();
             }
           }
         }
@@ -96,6 +99,9 @@
           }
         }
       }
+    }
+    &-project:hover {
+      @include hoverBox();
     }
   }
 }
@@ -138,7 +144,7 @@
 }
 @media (min-width: map-get($breakpoints, desktop)) {
   .projectsSection {
-    padding: 40px 100px;
+    padding: 10px 100px;
     &-title {
       @include typo-size($main_font, map-get($font-sizes, xl));
     }

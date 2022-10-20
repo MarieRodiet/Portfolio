@@ -12,14 +12,7 @@
   &-check {
     width: 18px;
     fill: white;
-    @include keyframes(rotate) {
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(360deg);
-      }
-    }
+    animation-name: rotate();
     @include animate(rotate, 0.8s, linear, infinite);
   }
   @media (min-width: map-get($breakpoints, tablet)) {
@@ -27,19 +20,9 @@
   }
 }
 .button:hover {
+  animation-name: btnHover();
   outline: none;
-  @include keyframes(hover) {
-    0% {
-      transform: scale(1);
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    }
-
-    100% {
-      transform: scale(1.02);
-      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-    }
-  }
-  @include animate(hover, 0.8s, infinite, alternate-reverse);
+  @include animate(btnHover, 0.8s, infinite, alternate-reverse);
 }
 
 .button:disabled {

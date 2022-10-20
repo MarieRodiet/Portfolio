@@ -9,7 +9,7 @@ import { ReactComponent as Arrow } from '../assets/SVG/angle-down-solid.svg'
 
 export default function SkillsSection({ isEnglish }) {
   const buttonText = isEnglish ? 'Resume' : 'CV'
-  const [toggled, updateToggle] = useState(true)
+  const [toggled, updateToggle] = useState(false)
   return (
     <div className="skillsSection">
       <a

@@ -3,6 +3,7 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  @include showUp();
   .skillsGroup {
     display: flex;
     flex-direction: column;
@@ -31,6 +32,9 @@
         @include typo-size($main_font, map-get($font-sizes, xxs));
       }
     }
+  }
+  .skillsGroup:hover {
+    @include hoverBox();
   }
 }
 
