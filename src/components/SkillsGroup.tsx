@@ -1,6 +1,16 @@
-import { PropTypes } from 'prop-types'
+type Props = {
+  skillObject: SkillObjectProps
+  isEnglish: boolean
+  index: number
+}
 
-export default function SkillsGroup({ skillObject, isEnglish, index }) {
+type SkillObjectProps = {
+    en: string
+    fr: string
+    skills: string[]
+}
+
+export default function SkillsGroup({ skillObject, isEnglish, index }: Props) {
   return (
     <div className={`skillsGroup skillsbox-${index}`}>
       <h3>{isEnglish ? skillObject.en : skillObject.fr}</h3>
@@ -13,8 +23,3 @@ export default function SkillsGroup({ skillObject, isEnglish, index }) {
   )
 }
 
-SkillsGroup.propTypes = {
-  skillObject: PropTypes.object,
-  isEnglish: PropTypes.bool,
-  index: PropTypes.number,
-}

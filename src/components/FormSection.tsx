@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import { send } from 'emailjs-com'
-import { PropTypes } from 'prop-types'
 import Button from './Button'
 
-export default function FormSection({ isEnglish }) {
+type Props = {
+  isEnglish: boolean
+}
+export default function FormSection({ isEnglish }: Props) {
   const [clickedMessageButton, setClickedMessageButton] = useState(false)
   const [toSend, setToSend] = useState({
     from_name: '',
@@ -26,7 +28,7 @@ export default function FormSection({ isEnglish }) {
     return 'Envoyer'
   }
 
-  const onSubmit = (e) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     setLoading(true)
     e.preventDefault()
     send('service_dyz2255', 'template_cqdshuy', toSend, 'v6m1Gves3KCpgNMLl')
@@ -38,8 +40,9 @@ export default function FormSection({ isEnglish }) {
         throw err
       })
   }
-  const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value })
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setToSend({ ...toSend, [e.target.name]: e.target.value.trim() })
   }
   return (
     <div className="formSection" id="contactme">
@@ -76,7 +79,7 @@ export default function FormSection({ isEnglish }) {
           <textarea
             required
             id="Message"
-            type="text"
+            data-type="text"
             name="message"
             placeholder="Message"
             value={toSend.message}
@@ -84,8 +87,6 @@ export default function FormSection({ isEnglish }) {
           />
         </div>
         <Button
-          className="button"
-          type="submit"
           buttonText={buttonText()}
           isSent={clickedMessageButton}
           loading={loading}
@@ -93,8 +94,4 @@ export default function FormSection({ isEnglish }) {
       </form>
     </div>
   )
-}
-
-FormSection.propTypes = {
-  isEnglish: PropTypes.bool,
 }

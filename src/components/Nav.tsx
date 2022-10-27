@@ -1,16 +1,26 @@
 import { slide as Menu } from 'react-burger-menu'
 import { HashLink } from 'react-router-hash-link'
 import { useState } from 'react'
-import { PropTypes } from 'prop-types'
 import logo from '../assets/IMG/MM.png'
+import { useRef } from 'react'
 
-export default function Nav({ handleLanguageChange, isEnglish }) {
+type Props = {
+  handleLanguageChange: React.MouseEventHandler
+  isEnglish: boolean
+}
+export default function Nav({ handleLanguageChange, isEnglish }: Props) {
   const [isOpen, setOpen] = useState(false)
   const handleIsOpen = () => {
     setOpen(!isOpen)
   }
   const handleIsClosed = () => {
     setOpen(false)
+  }
+
+  const LinkOne = useRef<HTMLInputElement | null>(null)
+
+  const scrolLWithUseRef = () => {
+    LinkOne.current?.scrollIntoView({ block: 'start', behavior: 'smooth' })
   }
 
   return (
@@ -25,9 +35,7 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             smooth
             className="nav-links-link"
             to="#aboutme"
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'start' })
-            }
+            onClick={scrolLWithUseRef}
           >
             {isEnglish ? 'About Me' : 'A Propos'}
           </HashLink>
@@ -35,9 +43,7 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             smooth
             className="nav-links-link"
             to="#projects"
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'start' })
-            }
+            onClick={scrolLWithUseRef}
           >
             {isEnglish ? 'Projects' : 'Projets'}
           </HashLink>
@@ -45,9 +51,7 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             smooth
             className="nav-links-link"
             to="#contactme"
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'start' })
-            }
+            onClick={scrolLWithUseRef}
           >
             {isEnglish ? 'Contact Me' : 'Contact'}
           </HashLink>
@@ -60,9 +64,6 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             smooth
             className="menu-item"
             to="#aboutme"
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'start' })
-            }
           >
             {isEnglish ? 'About Me' : 'A Propos'}
           </HashLink>
@@ -71,9 +72,6 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             smooth
             className="menu-item"
             to="#projects"
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'start' })
-            }
           >
             {isEnglish ? 'Projects' : 'Projets'}
           </HashLink>
@@ -82,9 +80,6 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
             smooth
             className="menu-item"
             to="#contactme"
-            scroll={(el) =>
-              el.scrollIntoView({ behavior: 'auto', block: 'start' })
-            }
           >
             {isEnglish ? 'Contact Me' : 'Contact'}
           </HashLink>
@@ -92,9 +87,4 @@ export default function Nav({ handleLanguageChange, isEnglish }) {
       </div>
     </div>
   )
-}
-
-Nav.propTypes = {
-  handleLanguageChange: PropTypes.func,
-  isEnglish: PropTypes.bool,
 }

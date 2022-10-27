@@ -4,11 +4,11 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 0 30%;
-  &-link {
+  a > svg {
     width: 25px;
     margin: 0 10px;
   }
-  &-link:hover {
+  a >svg:hover {
     fill: $red;
   }
 }
@@ -16,7 +16,7 @@
 @media (min-width: map-get($breakpoints, tablet)) {
   .socialMediaContainer {
     padding: 0 40%;
-    &-link {
+    a > svg {
       width: 30px;
     }
   }
@@ -25,7 +25,7 @@
 @media (min-width: map-get($breakpoints, desktop)) {
   .socialMediaContainer {
     padding: 0 40%;
-    &-link {
+    a > svg {
       width: 35px;
     }
   }

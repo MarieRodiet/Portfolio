@@ -1,8 +1,10 @@
-import { PropTypes } from 'prop-types'
 import profilePicture from '../assets/IMG/profile-picture.png'
 import { profile } from '../data/profile'
 
-export default function Profile({ isEnglish }) {
+type Props = {
+    isEnglish: boolean
+}
+export default function Profile({ isEnglish }: Props) {
   return (
     <div className="profile" id="aboutme">
       <div className="profile-text">
@@ -23,6 +25,4 @@ export default function Profile({ isEnglish }) {
     </div>
   )
 }
-Profile.propTypes = {
-  isEnglish: PropTypes.bool,
-}
+

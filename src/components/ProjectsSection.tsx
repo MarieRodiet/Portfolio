@@ -1,9 +1,11 @@
-import { PropTypes } from 'prop-types'
 import { useState } from 'react'
 import { projects } from '../data/projects'
 import { ReactComponent as Arrow } from '../assets/SVG/angle-down-solid.svg'
 
-export default function ProjectsSection({ isEnglish }) {
+type Props = {
+    isEnglish: boolean
+}
+export default function ProjectsSection({ isEnglish }: Props) {
   const [toggled, updateToggle] = useState(false)
   return (
     <section className="projectsSection">
@@ -40,6 +42,7 @@ export default function ProjectsSection({ isEnglish }) {
                       className="projectsSection-container-project-content-links-linksContainer-website"
                       href={p.url}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       {isEnglish ? 'See on Github' : 'Voir sur Github'}
                     </a>
@@ -48,6 +51,7 @@ export default function ProjectsSection({ isEnglish }) {
                         className="projectsSection-container-project-content-links-linksContainer-website"
                         href={p.website}
                         target="_blank"
+                        rel="noreferrer"
                       >
                         {isEnglish ? 'See it live!' : 'Voir en live!'}
                       </a>
@@ -69,7 +73,4 @@ export default function ProjectsSection({ isEnglish }) {
       ) : null}
     </section>
   )
-}
-ProjectsSection.propTypes = {
-  isEnglish: PropTypes.bool,
 }

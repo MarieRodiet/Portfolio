@@ -1,14 +1,14 @@
-import { PropTypes } from 'prop-types'
 import { useState } from 'react'
 import FRResume from '../assets/DOCS/MarieMooreFR.pdf'
 import ENResume from '../assets/DOCS/MarieMooreEN.pdf'
-import Button from './Button'
 import { skills } from '../data/skills'
 import SkillsGroup from './SkillsGroup'
 import { ReactComponent as Arrow } from '../assets/SVG/angle-down-solid.svg'
 
-export default function SkillsSection({ isEnglish }) {
-  const buttonText = isEnglish ? 'Resume' : 'CV'
+type Props = {
+  isEnglish: boolean
+}
+export default function SkillsSection({ isEnglish }: Props) {
   const [toggled, updateToggle] = useState(false)
   return (
     <div className="skillsSection">
@@ -19,7 +19,9 @@ export default function SkillsSection({ isEnglish }) {
         rel="noopener noreferrer"
         download
       >
-        <Button type="button" className="button" buttonText={buttonText} />
+        <button type="button" className="button">
+          {isEnglish ? 'Resume' : 'CV'}
+        </button>
       </a>
 
       <div className="skillsSection-skills">
@@ -49,7 +51,4 @@ export default function SkillsSection({ isEnglish }) {
       </div>
     </div>
   )
-}
-SkillsSection.propTypes = {
-  isEnglish: PropTypes.bool,
 }

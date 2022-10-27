@@ -7,19 +7,16 @@ import SkillsSection from '../components/SkillsSection'
 import Footer from '../components/Footer'
 import ProjectsSection from '../components/ProjectsSection'
 import FormSection from '../components/FormSection'
+import React from 'react'
 
 import SocialMedia from '../components/SocialMedia'
 
-function App() {
+export default function App() {
   const [isEnglish, toggleLanguage] = useState(true)
-  const [isLightTheme, setLightTheme] = useState(true)
   const handleLanguageChange = () => {
     toggleLanguage(!isEnglish)
   }
 
-  const handleTheme = () => {
-    setLightTheme(!isLightTheme)
-  }
   return (
     <div className="App" id="outer-container">
       <HashRouter>
@@ -32,14 +29,8 @@ function App() {
         <ProjectsSection isEnglish={isEnglish} />
         <FormSection isEnglish={isEnglish} />
         <SocialMedia />
-        <Footer
-          text="Copyright 2022 Marie Moore"
-          isLightTheme={isLightTheme}
-          handleTheme={handleTheme}
-        />
+        <Footer text="Copyright 2022 Marie Moore" />
       </HashRouter>
     </div>
   )
 }
-
-export default App
