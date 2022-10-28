@@ -51,6 +51,8 @@
   }
   @media (min-width: map-get($breakpoints, desktop)) {
     padding: 40px 100px;
+    max-width: 1400px;
+    margin: 0 auto;
     &-text {
       width: 70%;
       max-width: none;
@@ -59,7 +61,7 @@
         @include typo-size($main_font, map-get($font-sizes, xxl));
       }
       &-intro {
-        @include typo-size($second_font, map-get($font-sizes, s));
+         @include typo-size($second_font, map-get($font-sizes, ss));
       }
     }
     &-imgContainer {

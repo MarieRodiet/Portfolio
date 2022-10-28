@@ -63,6 +63,8 @@
 
   @media (min-width: map-get($breakpoints, desktop)) {
     padding: 40px 100px;
+        max-width: 1400px;
+    margin: 0 auto;
     &-logo {
       max-width: 120px;
     }

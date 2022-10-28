@@ -29,6 +29,14 @@
   -webkit-background-clip: text;
 }
 
+@mixin scrollgradient() {
+  background: -webkit-linear-gradient(
+    162deg,
+    rgba(232, 95, 92, 1) 26%,
+    rgba(10, 10, 10, 1) 100%
+  );
+}
+
 @for $i from 1 through 10 {
   .skillsbox-#{$i} {
     animation-delay: 0.2 * $i;
@@ -55,7 +63,6 @@
 
 @mixin hoverBox() {
   box-shadow: 0px 0px 3px $gray;
-  transform: scale(1.002);
   background-color: #fdfdfd;
 }
 
@@ -85,7 +92,6 @@
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }

@@ -3,16 +3,34 @@ import ArgentBank from '../assets/IMG/argentbank.png'
 import Kasa from '../assets/IMG/kasa.png'
 import LearnAtHome from '../assets/IMG/learnathome.png'
 import LesPetitsPlats from '../assets/IMG/lespetitsplats.png'
-import Billed from '../assets/IMG/billed.png'
 import Fisheye from '../assets/IMG/fisheye.png'
-import SliderPuzzle from '../assets/IMG/sliderpuzzle.png'
-import Booki from '../assets/IMG/booki.png'
-import OhMyFood from '../assets/IMG/ohmyfood.png'
 import Healthwealth from '../assets/IMG/healthwealth.png'
 import Table from '../assets/IMG/table.png'
 import Markdown from '../assets/IMG/markdown.png'
+import Portfolio from '../assets/IMG/portfolio.png'
+import DrumMachine from '../assets/IMG/drummachine.png'
+import Booki from '../assets/IMG/booki.png'
+import OhMyFood from '../assets/IMG/ohmyfood.png'
+import SliderPuzzle from '../assets/IMG/sliderpuzzle.png'
 
 export const projects = [
+  {
+    img: Portfolio,
+    name: 'Portfolio',
+    fr: "J'ai tout d'abord codé mon portfolio en React avant d'ajouter Typescript. Tous les textes (projets, profile, urls des liens etc) sont stockés dans des fichiers Javascript. J'ai utilisé SASS pour avoir accès aux mixins, keyframes, variables et fonctions for dans mes règles CSS. L'idée est d'honorer la méthode DRY (Don't Repeat Yourself) dans chaque language utilisé. ",
+    en: "I first coded this portfolio with React before adding Typescript. All texts (projects, profile, urls for links) are stored in javascript files. I used SASS so I could have access to mixins, keyframes, variables and for loops in my CSS rules. The idea is to honor the DRY method (Don't Repeat Yourself) in all languages present in the application.",
+    tags: ['TYPESCRIPT', 'SASS', 'ANIMATIONS', 'EMAILJS'],
+    website: 'https://mariemoore.site',
+  },
+  {
+    img: DrumMachine,
+    name: 'Drum Machine',
+    fr: "Cette application web m'a permit non seulement de pratiquer Typescript avec un accent sur la manipulation du DOM mais surtout de découvrir la fameuse framework Material UI. Cette dernière se prend en main très rapidement grâce à une documentation claire et de nombreux exemples. ",
+    en: 'This web application allowed me to not only practise DOM Manipulation with Typescript but also the well known framework Material UI. It is an easy and intuitive tool that speeds the development process. The documentation and the numerous examples made it very accessible.',
+    tags: ['TYPESCRIPT', 'MATERIAL UI', 'DOM'],
+    website: 'https://marierodiet.github.io/drum-machine/',
+    url: 'https://github.com/MarieRodiet/drum-machine',
+  },
   {
     img: Markdown,
     name: 'Markdown Previewer',
@@ -85,14 +103,6 @@ export const projects = [
     website: 'http://mariemoore.site/LesPetitsPlats/',
   },
   {
-    img: Billed,
-    name: 'Billed',
-    fr: "Les tests unitaires, tests d'intégration et E2E liés au déboguage ont permis de faire de moi une arme redoutable contre les bugs. Mon travail consistait à écrire des tests pour une application déja existante et à corriger ses bugs.",
-    en: 'This project is about testing a web application that was coded long ago with jQuery code and no comment. You will need to install the back end (See readme file) on your machine to make my app work!',
-    tags: ['JEST', 'TESTS', 'DEBUGGING', 'JQUERY'],
-    url: 'https://github.com/MarieRodiet/Billed',
-  },
-  {
     img: Fisheye,
     name: 'Fisheye',
     fr: "Pratiquer les Design Pattern et les concepts de Programmation Orientée Objet a été un aspect important de ce projet. L'application peut automatiquement afficher le composant image ou video selon le type de media. Merci à Github pages d'héberger mon site!",
@@ -100,15 +110,6 @@ export const projects = [
     tags: ['ACCESSIBILITY', 'FETCH', 'ESLINT', 'ROUTER'],
     url: 'https://github.com/MarieRodiet/Fisheye',
     website: 'https://marierodiet.github.io/Fisheye/',
-  },
-  {
-    img: SliderPuzzle,
-    name: 'Slider Puzzle',
-    fr: "J'ai codé ce jeu afin de pratiquer la manipulation du DOM par Javascript, l'élément HTML Canvas et la logique par les algorithmes. Je n'avais pas réalisé à quel point ce programme serait un défi pour moi. J'ai perseveré et voilà! Jouez et faites vous plaisir!",
-    en: 'This is a game I coded in order to practice DOM manipulation, canvas and logic in Javascript. It had no idea how complex it would be at the time I started it! I am glad I did not give up and was able to finish it. Play and enjoy!',
-    tags: ['JAVASCRIPT', 'CANVAS', 'DOM', 'ALGORYTHMS'],
-    url: 'https://github.com/MarieRodiet/sliderPuzzleRepo',
-    website: 'http://mariemoore.site/SliderPuzzle/',
   },
   {
     img: Booki,
@@ -127,5 +128,14 @@ export const projects = [
     tags: ['GIT', 'SASS', 'ANIMATION', 'cPanel'],
     url: 'https://github.com/MarieRodiet/OhMyFood',
     website: 'http://mariemoore.site/ohmyfood/',
+  },
+  {
+    img: SliderPuzzle,
+    name: 'Slider Puzzle',
+    fr: "J'ai codé ce jeu afin de pratiquer la manipulation du DOM par Javascript, l'élément HTML Canvas et la logique par les algorithmes. Je n'avais pas réalisé à quel point ce programme serait un défi pour moi. J'ai perseveré et voilà! Jouez et faites vous plaisir!",
+    en: 'This is a game I coded in order to practice DOM manipulation, canvas and logic in Javascript. It had no idea how complex it would be at the time I started it! I am glad I did not give up and was able to finish it. Play and enjoy!',
+    tags: ['JAVASCRIPT', 'CANVAS', 'DOM', 'ALGORYTHMS'],
+    url: 'https://github.com/MarieRodiet/sliderPuzzleRepo',
+    website: 'http://mariemoore.site/SliderPuzzle/',
   },
 ]

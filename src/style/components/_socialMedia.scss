@@ -8,8 +8,10 @@
     width: 25px;
     margin: 0 10px;
   }
-  a >svg:hover {
+  a > svg:hover {
     fill: $red;
+    animation-name: rotate();
+    @include animate(rotate, 1s, ease, 1);
   }
 }
 

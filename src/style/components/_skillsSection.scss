@@ -45,6 +45,8 @@
 }
 @media (min-width: map-get($breakpoints, desktop)) {
   .skillsSection {
+        max-width: 1700px;
+    margin: 0 auto;
     &-resume {
       width: 100%;
       max-width: 200px;

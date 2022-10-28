@@ -2,14 +2,14 @@ export const skills = [
   {
     en: 'Languages',
     fr: 'Langages',
-    skills: ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'TYPESCRIPT', 'JSON'],
+    skills: ['HTML', 'CSS', 'JAVASCRIPT', 'TYPESCRIPT', 'JSON', 'SQL', 'C#'],
   },
   {
     en: 'Libraries',
     fr: 'Bibliothèques',
     skills: [
       'REACT',
-      'REACT-REDUX',
+      'REDUX',
       'STYLED-COMPONENTS',
       'RECHARTS',
       'REACT HOOK FORM',
@@ -19,12 +19,27 @@ export const skills = [
   {
     en: 'Frameworks',
     fr: 'Frameworks',
-    skills: ['TAILWING', 'REACT BOOTSTRAP', 'REACT ROUTER', 'JEST'],
+    skills: [
+      'TAILWING CSS',
+      'MATERIAL UI',
+      'REACT BOOTSTRAP',
+      'REACT ROUTER',
+      'JEST',
+    ],
   },
   {
     en: 'Tools & Systems',
     fr: 'Outils & Systemes',
-    skills: ['GIT', 'NPM', 'PRETTIER', 'ESLINT', 'VSCODE', 'DEVTOOLS', 'API'],
+    skills: [
+      'GIT',
+      'NPM',
+      'PRETTIER',
+      'ESLINT',
+      'SASS',
+      'DEVTOOLS',
+      'API',
+      'STORYBOOK',
+    ],
   },
   {
     en: 'Extras',
@@ -34,8 +49,8 @@ export const skills = [
       'ACCESSIBILITY',
       'RESPONSIVE',
       'UI/UX',
-      'FIGMA',
-      'WIREFRAME',
+      'WIREFRAME & FIGMA',
+      'USE CASES & USER STORIES',
     ],
   },
 ]
