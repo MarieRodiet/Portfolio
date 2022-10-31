@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.c68d0c36.css",
-    "main.js": "/static/js/main.16658f85.js",
+    "main.js": "/static/js/main.9c8418e9.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/MarieMooreFR.pdf": "/static/media/MarieMooreFR.b48edb658dacad2c8df7.pdf",
-    "static/media/MarieMooreEN.pdf": "/static/media/MarieMooreEN.c7e382b9d6aba471d07a.pdf",
+    "static/media/MarieMooreFR.pdf": "/static/media/MarieMooreFR.e9e217f4f013c4e12db9.pdf",
+    "static/media/MarieMooreEN.pdf": "/static/media/MarieMooreEN.08ab13d325c220ff9cce.pdf",
     "static/media/portfolio.png": "/static/media/portfolio.72ef3a60dcbac339f114.png",
     "static/media/sliderpuzzle.png": "/static/media/sliderpuzzle.e62fd30784b88c56c68b.png",
     "static/media/profile-picture.png": "/static/media/profile-picture.63a58ca91ddc0190f173.png",
@@ -25,11 +25,11 @@
     "static/media/check-solid.svg": "/static/media/check-solid.d77a6106b69459fb02faabc5c2925156.svg",
     "static/media/angle-down-solid.svg": "/static/media/angle-down-solid.6f7e6929b52e55791ccbbddb1d02afbb.svg",
     "main.c68d0c36.css.map": "/static/css/main.c68d0c36.css.map",
-    "main.16658f85.js.map": "/static/js/main.16658f85.js.map",
+    "main.9c8418e9.js.map": "/static/js/main.9c8418e9.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c68d0c36.css",
-    "static/js/main.16658f85.js"
+    "static/js/main.9c8418e9.js"
   ]
 }
