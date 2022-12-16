@@ -2,7 +2,16 @@ export const skills = [
   {
     en: 'Languages',
     fr: 'Langages',
-    skills: ['HTML', 'CSS', 'JAVASCRIPT', 'TYPESCRIPT', 'JSON', 'SQL', 'C#'],
+    skills: [
+      'HTML',
+      'CSS',
+      'JAVASCRIPT',
+      'TYPESCRIPT',
+      'JSON',
+      'SQL',
+      'C#',
+      'JAVA',
+    ],
   },
   {
     en: 'Libraries',

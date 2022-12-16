@@ -8,17 +8,22 @@ import Footer from '../components/Footer'
 import ProjectsSection from '../components/ProjectsSection'
 import FormSection from '../components/FormSection'
 import React from 'react'
-
+import { motion, useScroll } from 'framer-motion'
 import SocialMedia from '../components/SocialMedia'
 
 export default function App() {
   const [isEnglish, toggleLanguage] = useState(true)
+  const { scrollYProgress } = useScroll()
   const handleLanguageChange = () => {
     toggleLanguage(!isEnglish)
   }
 
   return (
     <div className="App" id="outer-container">
+      <motion.div
+        className="progress-bar"
+        style={{ scaleX: scrollYProgress }}
+      />
       <HashRouter>
         <Nav
           handleLanguageChange={handleLanguageChange}

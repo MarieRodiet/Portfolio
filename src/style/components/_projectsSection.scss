@@ -179,16 +179,3 @@
     }
   }
 }
-
-.progress-bar {
-  position: fixed;
-  content: "";
-  z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-//   background-color: $red;
-@include scrollgradient();
-  transform-origin: 0%;
-}

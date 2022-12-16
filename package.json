@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mariemoore.site/",
+  "homepage": "https://mariemoore.site",
   "dependencies": {
     "@types/jest": "^29.2.0",
     "@types/node": "^18.11.7",

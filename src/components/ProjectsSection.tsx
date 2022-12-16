@@ -1,22 +1,15 @@
 import { useState } from 'react'
 import { projects } from '../data/projects'
 import { ReactComponent as Arrow } from '../assets/SVG/angle-down-solid.svg'
-import { motion, useScroll } from 'framer-motion'
 
 type Props = {
   isEnglish: boolean
 }
 export default function ProjectsSection({ isEnglish }: Props) {
   const [toggled, updateToggle] = useState(false)
-    const { scrollYProgress } = useScroll()
-  return (
-    <>
-      <section  className="projectsSection">
-        <motion.div
-             className="progress-bar"
-            style={{ scaleX: scrollYProgress }}
 
-        />
+  return (
+      <section  className="projectsSection">
         <div className="projectsSection-header">
           <Arrow
             onKeyDown={() => updateToggle(!toggled)}
@@ -80,6 +73,5 @@ export default function ProjectsSection({ isEnglish }: Props) {
           </div>
         ) : null}
       </section>
-    </>
   )
 }

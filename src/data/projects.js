@@ -17,7 +17,7 @@ export const projects = [
   {
     img: Portfolio,
     name: 'Portfolio',
-    fr: "J'ai tout d'abord codé mon portfolio en React avant d'ajouter Typescript. Tous les textes (projets, profile, urls des liens etc) sont stockés dans des fichiers Javascript. J'ai utilisé SASS pour avoir accès aux mixins, keyframes, variables et fonctions for dans mes règles CSS. L'idée est d'honorer la méthode DRY (Don't Repeat Yourself) dans chaque language utilisé. ",
+    fr: "J'ai tout d'abord codé mon portfolio en React avant d'ajouter le superset Typescript. Tous les textes (projets, profile, urls des liens etc) sont stockés dans des fichiers Javascript. J'ai utilisé SASS pour avoir accès aux mixins, keyframes, variables et fonctions dans mes règles CSS. L'idée est d'honorer la méthode DRY (Don't Repeat Yourself) dans chaque language utilisé. ",
     en: "I first coded this portfolio with React before adding Typescript. All texts (projects, profile, urls for links) are stored in javascript files. I used SASS so I could have access to mixins, keyframes, variables and for loops in my CSS rules. The idea is to honor the DRY method (Don't Repeat Yourself) in all languages present in the application.",
     tags: ['TYPESCRIPT', 'SASS', 'ANIMATIONS', 'EMAILJS'],
     website: 'https://mariemoore.site',
@@ -26,7 +26,7 @@ export const projects = [
     img: DrumMachine,
     name: 'Drum Machine',
     fr: "Cette application web m'a permit non seulement de pratiquer Typescript avec un accent sur la manipulation du DOM mais surtout de découvrir la fameuse framework Material UI. Cette dernière se prend en main très rapidement grâce à une documentation claire et de nombreux exemples. ",
-    en: 'This web application allowed me to not only practise DOM Manipulation with Typescript but also the well known framework Material UI. It is an easy and intuitive tool that speeds the development process. The documentation and the numerous examples made it very accessible.',
+    en: 'This web application allowed me to practise not only DOM Manipulation with Typescript but also the well known framework Material UI. It is an easy and intuitive tool that speeds the development process. The documentation and the numerous examples made it very accessible.',
     tags: ['TYPESCRIPT', 'MATERIAL UI', 'DOM'],
     website: 'https://marierodiet.github.io/drum-machine/',
     url: 'https://github.com/MarieRodiet/drum-machine',
