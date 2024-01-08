@@ -4,7 +4,6 @@ export const profile = {
   linkedIn: 'https://www.linkedin.com/in/marie-rodiet-moore/',
   github: 'https://github.com/MarieRodiet',
   anArray: [
-    'Hello!',
     "I'm a full-stack web developer based in Paris. Currently, I'm gaining hands-on experience and enhancing my Java and Angular skills through a degree internship. I initiated my programming journey in 2020 with C# in the USA, then shifted towards JavaScript and React, earning a Bachelor's degree in Frontend Web Development.",
     "Now focused on backend development with Java EE, Spring Boot, and SQL, I'm actively contributing to a Parisian company. Feel free to connect through the form below or your preferred social network.",
     'Thanks for visiting!',
