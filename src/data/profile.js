@@ -3,6 +3,15 @@ export const profile = {
   email: 'mailto:marie.rodiet@gmail.com',
   linkedIn: 'https://www.linkedin.com/in/marie-rodiet-moore/',
   github: 'https://github.com/MarieRodiet',
-  an: `Hello!  I am a junior fullstack web developper based in Paris! I am currently doing an internship in which I not only learn Java but also get professional experience. I started my journey in programming beginning of 2020 in Oregon, USA. I learned to code with C# to create web sites and desktop software in the .Net ecosystem. I later oriented my focus toward Javascript and React and got a bachelor in frontend web development. I am now studying for a bachelor in backend developement with Java EE while working for a Parisian company. Please feel free to contact me directly via the form below or the social network of your choice. Thanks for visiting!`,
-  fr: "Bonjour! Je suis une développeuse fullstack actuellement en alternance pour apprendre Java et gagner en expérience professionnelle. J'ai débuté mon aventure dans la programmation début 2020 aux USA. A l'époque je codais des applications web et des logiciels desktop dans l'écosysteme de .Net. Je me suis graduellement orientée vers Javascript et React pour ensuite obtenir une licence dans le developpement front. Je suis désormais étudiante en licence backend avec le langage Java tout en travaillant dans une entreprise Parisienne. N'hésitez pas à me contacter par le formulaire ou le réseau social de votre choix! Merci de votre visite!",
+  anArray: [
+    'Hello!',
+    "I'm a full-stack web developer based in Paris. Currently, I'm gaining hands-on experience and enhancing my Java and Angular skills through a degree internship. I initiated my programming journey in 2020 with C# in the USA, then shifted towards JavaScript and React, earning a Bachelor's degree in Frontend Web Development.",
+    "Now focused on backend development with Java EE, Spring Boot, and SQL, I'm actively contributing to a Parisian company. Feel free to connect through the form below or your preferred social network.",
+    'Thanks for visiting!',
+  ],
+  frArray: [
+    "Je suis un développeur web full-stack basé à Paris. Actuellement, j'acquiers une expérience pratique et renforce mes compétences en Java et Angular grâce à un stage diplômant en entreprise. J'ai amorcé mon parcours de programmation en 2020 avec C# aux États-Unis, pour ensuite me tourner vers JavaScript et React, obtenant ainsi une licence (RNCP Niveau 6) en développement web frontend.",
+    "Aujourd'hui concentrée sur le développement backend avec Java EE, Spring Boot et SQL, je contribue activement au sein d'une entreprise parisienne. N'hésitez pas à me contacter via le formulaire ci-dessous ou votre réseau social préféré.",
+    'Merci de votre visite!',
+  ],
 }

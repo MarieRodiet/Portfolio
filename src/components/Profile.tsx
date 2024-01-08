@@ -2,7 +2,7 @@ import profilePicture from '../assets/IMG/profile-picture.png'
 import { profile } from '../data/profile'
 
 type Props = {
-    isEnglish: boolean
+  isEnglish: boolean
 }
 export default function Profile({ isEnglish }: Props) {
   return (
@@ -10,9 +10,29 @@ export default function Profile({ isEnglish }: Props) {
       <div className="profile-text">
         <h1 className="profile-text-name">{profile.name}</h1>
         {isEnglish ? (
-          <p className="profile-text-intro">{profile.an}</p>
+          <div className="profile-text-intro">
+            <p>Hi !</p>
+            <p>
+              {' '}
+              {profile.anArray.map((item, index) => (
+                <p className="pt-15" key={index}>
+                  {item}
+                </p>
+              ))}
+            </p>
+          </div>
         ) : (
-          <p className="profile-text-intro">{profile.fr}</p>
+          <div className="profile-text-intro">
+            <p>Bonjour !</p>
+            <p>
+              {' '}
+              {profile.frArray.map((item, index) => (
+                <p className="pt-15" key={index}>
+                  {item}
+                </p>
+              ))}
+            </p>
+          </div>
         )}
       </div>
       <div className="profile-imgContainer">
@@ -25,4 +45,3 @@ export default function Profile({ isEnglish }: Props) {
     </div>
   )
 }
-

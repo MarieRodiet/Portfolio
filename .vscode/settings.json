@@ -3,8 +3,8 @@
   "editor.formatOnSave": true,
   "eslint.alwaysShowStatus": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+    "source.fixAll.eslint": "explicit"
+},
 "prettier.semi": false,
 "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"

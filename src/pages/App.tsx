@@ -34,7 +34,7 @@ export default function App() {
         <ProjectsSection isEnglish={isEnglish} />
         <FormSection isEnglish={isEnglish} />
         <SocialMedia />
-        <Footer text="Copyright 2022 Marie Moore" />
+        <Footer text="Copyright 2024 Marie Moore" />
       </HashRouter>
     </div>
   )
