@@ -3,92 +3,92 @@ import ArgentBank from '../assets/IMG/argentbank.png'
 import Kasa from '../assets/IMG/kasa.png'
 import LearnAtHome from '../assets/IMG/learnathome.png'
 import LesPetitsPlats from '../assets/IMG/lespetitsplats.png'
-import Fisheye from '../assets/IMG/fisheye.png'
+import Fisheye from '../assets/IMG/Fisheye.png'
 import Healthwealth from '../assets/IMG/healthwealth.png'
 import Table from '../assets/IMG/table.png'
 import Markdown from '../assets/IMG/markdown.png'
 import Portfolio from '../assets/IMG/portfolio.png'
 import DrumMachine from '../assets/IMG/drummachine.png'
-import Booki from '../assets/IMG/booki.png'
-import OhMyFood from '../assets/IMG/ohmyfood.png'
-import SliderPuzzle from '../assets/IMG/sliderpuzzle.png'
+import Booki from '../assets/IMG/Booki.png'
+
 
 export const projects = [
   {
     img: Portfolio,
     name: 'Portfolio',
-    fr: "J'ai tout d'abord codé mon portfolio en React avant d'ajouter le superset Typescript. Tous les textes (projets, profile, urls des liens etc) sont stockés dans des fichiers Javascript. J'ai utilisé SASS pour avoir accès aux mixins, keyframes, variables et fonctions dans mes règles CSS. L'idée est d'honorer la méthode DRY (Don't Repeat Yourself) dans chaque language utilisé. ",
-    en: "I first coded this portfolio with React before adding Typescript. All texts (projects, profile, urls for links) are stored in javascript files. I used SASS so I could have access to mixins, keyframes, variables and for loops in my CSS rules. The idea is to honor the DRY method (Don't Repeat Yourself) in all languages present in the application.",
-    tags: ['TYPESCRIPT', 'SASS', 'ANIMATIONS', 'EMAILJS'],
+    fr: ' Une application React codée initialement en JavaScript Vanilla, et ensuite convertie en Typescript. Elle utilise SASS pour le prétraitement CSS afin de respecter le principe DRY. ',
+    en: 'This React application, initially in Vanilla JavaScript, was later converted to Typescript. It employs SASS for CSS preprocessing to adhere to the DRY principle. ',
+    tags: ['TYPESCRIPT', 'SASS', 'ANIMATIONS'],
     website: 'https://mariemoore.site',
+    url: 'https://github.com/MarieRodiet/portfolio',
   },
   {
     img: DrumMachine,
     name: 'Drum Machine',
-    fr: "Cette application web m'a permit non seulement de pratiquer Typescript avec un accent sur la manipulation du DOM mais surtout de découvrir la fameuse framework Material UI. Cette dernière se prend en main très rapidement grâce à une documentation claire et de nombreux exemples. ",
-    en: 'This web application allowed me to practise not only DOM Manipulation with Typescript but also the well known framework Material UI. It is an easy and intuitive tool that speeds the development process. The documentation and the numerous examples made it very accessible.',
-    tags: ['TYPESCRIPT', 'MATERIAL UI', 'DOM'],
+    fr: "Cette application simpliste m'a permit de découvrir la fameuse framework Material UI, outil permettant un developpement simple et très rapide.  ",
+    en: 'A web app for practicing DOM Manipulation with Typescript and utilizing Material UI for rapid development.',
+    tags: ['TYPESCRIPT', 'MATERIAL', 'DOM'],
     website: 'https://marierodiet.github.io/drum-machine/',
     url: 'https://github.com/MarieRodiet/drum-machine',
   },
   {
     img: Markdown,
-    name: 'Markdown Previewer',
-    fr: "Cette petite application web permet à l'utilisateur d'écrire en Markdown brut dans le champ d'un formulaire et de voir immédiatement son rendu formaté en dessous. Elle a été codé en Typescript, stylée en Tailwing CSS et le texte est converti en utilisant la labrairie javascript Marked par CDN.",
-    en: 'This little web application allows the user to write raw markdown in the textarea of a form and see its immediate conversion below. It was coded with Typescript, styled with Tailwing CSS and the conversion from markdown to regular text is done using the javascript library Marked using it by CDN.',
-    tags: ['TYPESCRIPT', 'TAILWING', 'MARKED', 'CDN'],
+    name: 'MD Previewer',
+    fr: 'Previewer dans lequel la saisie d\'un texte Markdown se voit immédiatement convertie. Elle est stylée avec Tailwind CSS et utilise la bibliothèque Marked JS.',
+    en: 'This app allows users to input Markdown text and view the formatted output instantly. Developed with Typescript, styled with Tailwind CSS, and Markdown conversion by the Marked library.',
+    tags: ['TYPESCRIPT', 'TAILWING', 'MARKED'],
     website: 'https://marierodiet.github.io/markedown-previewer/',
     url: 'https://github.com/MarieRodiet/markedown-previewer',
   },
   {
     img: Table,
     name: 'Data Table Library',
-    fr: "Ce package codé en composent React été compilé avec Vite puis testée, documentée et publiée sur NPM. Toutes ces fonctionalités sont incluses: pagination, filtrage et classage des données par ordre ascendant ou descendant. Le package est extrêmement customisable: le choix d'un thème light ou dark, l'affichage de l'index et d'un titre ainsi que la possibilité de selectioner les rangées est optionnel. ",
-    en: 'This React Component library was compiled with Vite and fully tested and documented before being published on NPM. It includes: pagination, filtering and sorting of data. It is very customizable: you can choose to add or remove indexing and title, you can change between the dark or light theme and also have the possibility to select/unselect rows.',
-    tags: ['REACT', 'NPM', 'VITE', 'TESTING'],
+    fr: 'Une bibliothèque de composant React compilée avec Vite, offrant des fonctionnalités telles que la pagination, le filtrage et le tri. Très personnalisable avec des thèmes et des fonctionnalités optionnelles. ',
+    en: 'A React component library compiled with Vite, offering features like pagination, filtering, and sorting. Highly customizable with themes and optional features.',
+    tags: ['NPM', 'VITE', 'TESTING'],
     website: 'https://www.npmjs.com/package/table-react-component-library',
     url: 'https://github.com/MarieRodiet/table-react-component-library',
   },
   {
     img: Healthwealth,
     name: 'Healthwealth',
-    fr: "Cette application web est une CRA qui permet à l'utilisateur d'entrer les données d'un nouvel employé dans un formulaire et d'être redirigé vers une page où toutes les données de tous les employés enregistrés sont affichées dans un tableau. Les données sont stockées globalement avec le store de Redux et les composents se réaffichent par l'utilisation des hooks de React. Réaliser les audits de performance avec Lighthouse et créer, publier et utiliser un composant React sous forme de package sont les deux défits de ce projet.",
-    en: "This web application is a CRA in which a user can fill a form with a new employee's data and be redirected to a page where all the other employees'data is accessible in a data table. The global Redux store takes care of manipulating data and the React components rerender thanks to React hooks. Using lighthouse to test the web app's performance as well as creating, publishing and importing a React component library with NPM were the two main challenges of this project. ",
-    tags: ['REACT', 'NPM', 'LIGHTHOUSE', 'ALGORYTHMS'],
+    fr: 'Application web utilisant les hooks de React, le store Redux et Lighthouse pour la gestion des données des employés et le test de performance.',
+    en: 'Web application employing React hooks, Redux store, and Lighthouse for managing employee data and testing performance. ',
+    tags: ['REACT', 'LIGHTHOUSE', 'REDUX'],
     website: 'https://marierodiet.github.io/wealthhealth/',
     url: 'https://github.com/MarieRodiet/wealthhealth',
   },
   {
     img: ArgentBank,
     name: 'ArgentBank',
-    fr: "Ce projet accède à des données en backend grâce à des requêtes HTTP POST et Put. Les défis à relever étaient d'authentifier l'utilisateur, de stocker le token renvoyé; ainsi que de récupérer et modifier les données avant de les renvoyer. Quelques recherches pour m'initier à Swagger et des tests initiaux des requêtes avec l'aide de POSTMAN, ont rendu ce projet très intéressant. Il vous faudra installer le backend (voir le fichier readme) sur votre ordinateur afin de faire fonctionner mon projet!",
-    en: 'This project is linked to a Backend API accessed through POST and PUT HTTP requests. Authentificating the user, storing the token along with fetching and modifying his/her data were the main focus of this project. Some documentation with Swagger and some initial testing of the API with Postman made it extra fun. You will need to install the back end (See readme file) on your machine to make my app work!',
-    tags: ['REACT', 'REDUX', 'SWAGGER', 'POSTMAN'],
+    fr: "Un projet frontend intégré à une API backend pour l'authentification des utilisateurs, le stockage et la manipulation des données. La documentation a été facilitée avec Swagger et les tests initiaux ont été effectués avec Postman.",
+    en: 'A frontend project integrated with a backend API for user authentication, data storage, and manipulation. ',
+    tags: ['REDUX', 'SWAGGER', 'POSTMAN'],
     url: 'https://github.com/MarieRodiet/argentBank-Front',
   },
   {
     img: SportSee,
     name: 'Sportsee',
-    fr: "Cette application récupère des données pour les convertir en graphiques visuellement très explicites et agréables. J'ai utilisé le Factory Pattern (voir pages/App.js) afin de simplifier le changement d'URL pour récupérer les données.",
-    en: 'This app fetches data and converts it into amazing looking graphs. I used the factory pattern (see pages/App.js) to simplify the process of bringing in data from different locations. A single boolean is responsible for getting the right URL through which the data is going to be fetched => either from a local server or from a json file located within the root folder.',
-    tags: ['API', 'SASS', 'RECHARTS', 'REACT'],
+    fr: 'Développé avec Create React App, utilisant React Router et Hooks pour une navigation fluide et un réaffichage des composants. ',
+    en: 'Fetches data to generate visually appealing graphs. Utilizes the factory pattern for URL management.',
+    tags: ['API', 'RECHARTS', 'REACT'],
     url: 'https://github.com/MarieRodiet/sportsee_front',
   },
   {
     img: Kasa,
     name: 'Kasa',
     fr: 'Cette Application Web a été créee avec CRA et utilise React Router et React Hooks pour que les composants puissent se réafficher au besoin de la navigation.',
-    en: 'This Web application uses React and fetchs data from a local json file. It uses react router, hooks along with some sass to style all that. ',
-    tags: ['REACT', 'JSON', 'HOOKS', 'ROUTER'],
+    en: 'Developed with Create React App, employing React Router and Hooks for seamless navigation and component re-rendering.',
+    tags: ['REACT', 'HOOKS', 'ROUTER'],
     url: 'https://github.com/MarieRodiet/kasa',
     website: 'https://marierodiet.github.io/kasa/',
   },
   {
     img: LearnAtHome,
     name: 'Learn@Home',
-    fr: "Ce petit projet atypique m'a fait découvrir le monde du Web Design, de ces outils, et surtout de l'importance de comprendre les besoins du client et des exigences techniques. Il m'a permis d'aller plus loin en créant la documentation nécessaire comme support de dialogue avec le client et comme guide technique à l'équipe de développement: Use Cases, User Stories, diagrammes, les Mockups et enfin les maquettes Figma.",
-    en: "This little but challenging project helped me discover the world of Web Design, its tools and especially the importance of understanding the client's needs and the technical constraints. It helps me go further in the creation of the necessary documentation with the client and the web developers: Use Cases, User Stories and diagrams as well as the mockups and finally the Figma files.",
-    tags: ['AGILE', 'FIGMA', 'UI/UX', 'DOCUMENTATION'],
+    fr: " Un projet mettant l'accent sur les principes de conception Web et la documentation, comprenant des cas d'utilisation, des histoires d'utilisateurs, des diagrammes, des maquettes et des fichiers Figma. ",
+    en: 'A project emphasizing Web Design principles and documentation, including Use Cases, User Stories, diagrams, mockups, and Figma files. ',
+    tags: ['AGILE', 'FIGMA', 'UI/UX'],
     url: 'https://github.com/MarieRodiet/learnAtHome',
     website:
       'https://www.figma.com/file/9Ch3Q6IListIcm51rcarKX/Learn%40Home?node-id=20%3A618',
@@ -96,46 +96,28 @@ export const projects = [
   {
     img: LesPetitsPlats,
     name: 'Les Petits Plats',
-    fr: "La création de cette plateforme de recherche de recettes a poussé les limites de la logique plus loin qu'elles ne l'étaient. J'ai pu optimiser les algorithmes utilisés grâce à JSBench et vérifier l'accessibilité de mon site avec WAVE.",
-    en: 'This Web application will show you my algorithms skills through the optimized search filters that I created in order to find recipes.',
-    tags: ['JSBENCH', 'ALGORYTHMS', 'ES6', 'WAVE'],
+    fr: "Une plateforme de recherche de recettes mettant en valeur des filtres de recherche optimisés et des vérifications d'accessibilité.",
+    en: 'A recipe search platform showcasing optimized search filters and accessibility checks.',
+    tags: ['JSBENCH', 'ALGORYTHMS', 'WAVE'],
     url: 'https://github.com/MarieRodiet/Les-Petits-Plats',
     website: 'http://mariemoore.site/LesPetitsPlats/',
   },
   {
     img: Fisheye,
     name: 'Fisheye',
-    fr: "Pratiquer les Design Pattern et les concepts de Programmation Orientée Objet a été un aspect important de ce projet. L'application peut automatiquement afficher le composant image ou video selon le type de media. Merci à Github pages d'héberger mon site!",
-    en: 'In this web app coded in Vanilla Javascript I practiced OOP concepts to create templates using classes as well as implementing the factory design pattern. This way, the app can switch automatically from rendering a media template depending on to its type (picture or video). This site is hosted on Github pages.',
-    tags: ['ACCESSIBILITY', 'FETCH', 'ESLINT', 'ROUTER'],
+    fr: ' Application Web codée en JavaScript Vanilla mettant en œuvre des concepts OOP et le pattern factory pour le rendu des médias.',
+    en: 'Web app coded in Vanilla JavaScript implementing OOP concepts and the factory design pattern for media rendering. ',
+    tags: ['ACCESSIBILITY', 'FETCH', 'ROUTER'],
     url: 'https://github.com/MarieRodiet/Fisheye',
     website: 'https://marierodiet.github.io/Fisheye/',
   },
   {
     img: Booki,
     name: 'Booki',
-    fr: "Ce site web tout simple hébergé sur cPanel a été codé en HTML et CSS sans aucune librairie. Il a est (comme tous mes sites web!) responsive. Toutefois, il a la particularité d'avoir été le premier codé en Mobile First. J'ai désormais adopté cette manière de faire du responsive. ",
-    en: 'This is a simple website coded in HTML and CSS and hosted on cPanel. Like all other websites here, it is fully responsive. Booki is the first project on which I tested doing Mobile First responsive. I have not switch back to Desktop First ever since!',
-    tags: ['HTML', 'CSS', 'SEO', 'RESPONSIVE'],
+    fr: 'Site Web simple codé en HTML/CSS et hébergé sur cPanel. Entièrement responsive avec une approche Mobile First.  ',
+    en: 'Simple website coded in HTML/CSS, responsive with a Mobile First approach, and hosted on cPanel.',
+    tags: ['HTML/CSS', 'SEO', 'RESPONSIVE'],
     url: 'https://github.com/MarieRodiet/Booki',
     website: 'http://mariemoore.site/Booki/',
-  },
-  {
-    img: OhMyFood,
-    name: 'Oh My Food',
-    fr: "Ohmyfood est un projet qui m'a fait découvrir des animations plus complexes en CSS et aussi la fameuse librairie SASS! Deux coups de coeur d'un site que j'ai hébergés sur cPanel également.",
-    en: 'This is my first project using Sass and creating fancier animations with CSS. This site is also hosted on cPanel.',
-    tags: ['GIT', 'SASS', 'ANIMATION', 'cPanel'],
-    url: 'https://github.com/MarieRodiet/OhMyFood',
-    website: 'http://mariemoore.site/ohmyfood/',
-  },
-  {
-    img: SliderPuzzle,
-    name: 'Slider Puzzle',
-    fr: "J'ai codé ce jeu afin de pratiquer la manipulation du DOM par Javascript, l'élément HTML Canvas et la logique par les algorithmes. Je n'avais pas réalisé à quel point ce programme serait un défi pour moi. J'ai perseveré et voilà! Jouez et faites vous plaisir!",
-    en: 'This is a game I coded in order to practice DOM manipulation, canvas and logic in Javascript. It had no idea how complex it would be at the time I started it! I am glad I did not give up and was able to finish it. Play and enjoy!',
-    tags: ['JAVASCRIPT', 'CANVAS', 'DOM', 'ALGORYTHMS'],
-    url: 'https://github.com/MarieRodiet/sliderPuzzleRepo',
-    website: 'http://mariemoore.site/SliderPuzzle/',
-  },
+  }
 ]

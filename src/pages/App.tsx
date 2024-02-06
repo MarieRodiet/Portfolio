@@ -20,22 +20,30 @@ export default function App() {
 
   return (
     <div className="App" id="outer-container">
-      <motion.div
-        className="progress-bar"
-        style={{ scaleX: scrollYProgress }}
-      />
-      <HashRouter>
-        <Nav
-          handleLanguageChange={handleLanguageChange}
-          isEnglish={isEnglish}
+<div className="bg"></div>
+<div className="bg bg2"></div>
+<div className="bg bg3"></div>
+<div className="content">
+</div>
+
+
+        <motion.div
+          className="progress-bar"
+          style={{ scaleX: scrollYProgress }}
         />
-        <Profile isEnglish={isEnglish} />
-        <SkillsSection isEnglish={isEnglish} />
-        <ProjectsSection isEnglish={isEnglish} />
-        <FormSection isEnglish={isEnglish} />
-        <SocialMedia />
-        <Footer text="Copyright 2024 Marie Moore" />
-      </HashRouter>
-    </div>
+        <HashRouter>
+          <Nav
+            handleLanguageChange={handleLanguageChange}
+            isEnglish={isEnglish}
+          />
+          <Profile isEnglish={isEnglish} />
+          <SkillsSection isEnglish={isEnglish} />
+          <ProjectsSection isEnglish={isEnglish} />
+          <FormSection isEnglish={isEnglish} />
+          <SocialMedia />
+          <Footer text="Copyright 2024 Marie Moore" />
+        </HashRouter>
+      </div>
+
   )
 }

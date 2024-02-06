@@ -1,5 +1,4 @@
 #language-toggle {
-  background-color: $light;
   position: absolute;
   right: 36px;
   top: 36px;
@@ -27,7 +26,6 @@
 
   @media (min-width: map-get($breakpoints, tablet)) {
     display: block;
-    background-color: $light;
     display: flex;
     padding: 40px 8%;
 
@@ -170,7 +168,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 5px;
   @include scrollgradient();
   transform-origin: 0%;
 }
