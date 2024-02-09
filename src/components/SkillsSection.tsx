@@ -4,12 +4,46 @@ import ENResume from '../assets/DOCS/MarieMooreEN.pdf'
 import { skills } from '../data/skills'
 import SkillsGroup from './SkillsGroup'
 import { ReactComponent as Arrow } from '../assets/SVG/angle-down-solid.svg'
+import { ReactComponent as Css } from '../assets/SVG/skills/css.svg'
+import { ReactComponent as Docker } from '../assets/SVG/skills/docker.svg'
+import { ReactComponent as Figma } from '../assets/SVG/skills/figma.svg'
+import { ReactComponent as Git } from '../assets/SVG/skills/git.svg'
+import { ReactComponent as Html } from '../assets/SVG/skills/html.svg'
+import { ReactComponent as Java } from '../assets/SVG/skills/java.svg'
+import { ReactComponent as Javascript } from '../assets/SVG/skills/javascript.svg'
+import { ReactComponent as Jest } from '../assets/SVG/skills/jest.svg'
+import { ReactComponent as MaterialUI } from '../assets/SVG/skills/material-ui.svg'
+import { ReactComponent as MongoDB } from '../assets/SVG/skills/mongodb.svg'
+import { ReactComponent as Prettier } from '../assets/SVG/skills/prettier.svg'
+import { ReactComponent as React } from '../assets/SVG/skills/react.svg'
+import { ReactComponent as Redux } from '../assets/SVG/skills/redux.svg'
+import { ReactComponent as Sass } from '../assets/SVG/skills/sass.svg'
+import { ReactComponent as Svn } from '../assets/SVG/skills/svn.svg'
+import { ReactComponent as Tailwind } from '../assets/SVG/skills/tailwind.svg'
+import { ReactComponent as Typescript } from '../assets/SVG/skills/typescript.svg'
+import { ReactComponent as VsCode } from '../assets/SVG/skills/vscode.svg'
+import { ReactComponent as Terminal } from '../assets/SVG/skills/terminal.svg'
+import { ReactComponent as Spring } from '../assets/SVG/skills/spring.svg'
+import { ReactComponent as Postman } from '../assets/SVG/skills/postman.svg'
+import { ReactComponent as Npm } from '../assets/SVG/skills/npm.svg'
+import { ReactComponent as Maven } from '../assets/SVG/skills/maven.svg'
+import { ReactComponent as Intellij } from '../assets/SVG/skills/intellij.svg'
+import { ReactComponent as Eclipse } from '../assets/SVG/skills/eclipse.svg'
+import { ReactComponent as Diagram } from '../assets/SVG/skills/diagram.svg'
 
 type Props = {
   isEnglish: boolean
 }
 export default function SkillsSection({ isEnglish }: Props) {
   const [toggled, updateToggle] = useState(false)
+  /*  {skills.map((element, i) => (
+              <SkillsGroup
+                key={element.en}
+                skillObject={element}
+                isEnglish={isEnglish}
+                index={i}
+              />
+            ))}*/
   return (
     <div className="skillsSection">
       <a
@@ -38,14 +72,35 @@ export default function SkillsSection({ isEnglish }: Props) {
 
         {!toggled ? (
           <div className="skillGroup-container">
-            {skills.map((element, i) => (
-              <SkillsGroup
-                key={element.en}
-                skillObject={element}
-                isEnglish={isEnglish}
-                index={i}
-              />
-            ))}
+            <div className="skills-logos">
+              <Css />
+              <Docker />
+              <Figma />
+              <Git />
+              <Html />
+              <Java />
+              <Javascript />
+              <Jest />
+              <MaterialUI />
+              <MongoDB />
+              <Prettier />
+              <React />
+              <Redux />
+              <Sass />
+              <Svn />
+              <Tailwind />
+              <Typescript />
+
+              <VsCode />
+              <Postman />
+              <Spring />
+              <Npm />
+              <Intellij />
+              <Eclipse />
+              <Maven />
+              <Diagram />
+              <Terminal />
+            </div>
           </div>
         ) : null}
       </div>

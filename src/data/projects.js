@@ -3,14 +3,13 @@ import ArgentBank from '../assets/IMG/argentbank.png'
 import Kasa from '../assets/IMG/kasa.png'
 import LearnAtHome from '../assets/IMG/learnathome.png'
 import LesPetitsPlats from '../assets/IMG/lespetitsplats.png'
-import Fisheye from '../assets/IMG/Fisheye.png'
+import Fisheye from '../assets/IMG/fisheye.png'
 import Healthwealth from '../assets/IMG/healthwealth.png'
 import Table from '../assets/IMG/table.png'
 import Markdown from '../assets/IMG/markdown.png'
 import Portfolio from '../assets/IMG/portfolio.png'
 import DrumMachine from '../assets/IMG/drummachine.png'
-import Booki from '../assets/IMG/Booki.png'
-
+import Booki from '../assets/IMG/booki.png'
 
 export const projects = [
   {
@@ -34,7 +33,7 @@ export const projects = [
   {
     img: Markdown,
     name: 'MD Previewer',
-    fr: 'Previewer dans lequel la saisie d\'un texte Markdown se voit immédiatement convertie. Elle est stylée avec Tailwind CSS et utilise la bibliothèque Marked JS.',
+    fr: "Previewer dans lequel la saisie d'un texte Markdown se voit immédiatement convertie. Elle est stylée avec Tailwind CSS et utilise la bibliothèque Marked JS.",
     en: 'This app allows users to input Markdown text and view the formatted output instantly. Developed with Typescript, styled with Tailwind CSS, and Markdown conversion by the Marked library.',
     tags: ['TYPESCRIPT', 'TAILWING', 'MARKED'],
     website: 'https://marierodiet.github.io/markedown-previewer/',
@@ -119,5 +118,5 @@ export const projects = [
     tags: ['HTML/CSS', 'SEO', 'RESPONSIVE'],
     url: 'https://github.com/MarieRodiet/Booki',
     website: 'http://mariemoore.site/Booki/',
-  }
+  },
 ]
