@@ -10,8 +10,26 @@ import Markdown from '../assets/IMG/markdown.png'
 import Portfolio from '../assets/IMG/portfolio.png'
 import DrumMachine from '../assets/IMG/drummachine.png'
 import Booki from '../assets/IMG/booki.png'
+import PayMyBuddy from '../assets/IMG/paymybuddy.png'
+import MedilaboSolutions from '../assets/IMG/medilabosolutions.png'
 
 export const projects = [
+  {
+    img: MedilaboSolutions,
+    name: 'Medilabo Soluction',
+    fr: 'Une API Gateway Spring en cours de développement! Son architecture microservices intègre Docker pour containeriser MongoDB et les microservices du back-end.',
+    en: 'A Spring API Gateway under development! Its microservices architecture employs Docker to containerize MongoDB and the backend microservices.',
+    tags: ['DOCKER', 'GATEWAY', 'MONGODB'],
+    url: 'https://github.com/MarieRodiet/mediLabo_Solutions',
+  },
+  {
+    img: PayMyBuddy,
+    name: 'Pay My Buddy',
+    fr: " Une application Springboot utilisant thymeleaf pour le rendu html et Spring security pour l' inscription et l'authentification de l'utilisateurs. Connectée à une base MySQL à travers Spring data JPA. ",
+    en: 'A springboot application using thymeleaf for rendering templates and Spring Security for registration and authentication. Connected to a MySQL database through Spring data JPA.',
+    tags: ['SPRINGBOOT', 'OAUTH', 'MYSQL'],
+    url: 'https://github.com/MarieRodiet/payMyBuddy',
+  },
   {
     img: Portfolio,
     name: 'Portfolio',

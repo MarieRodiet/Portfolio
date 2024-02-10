@@ -30,6 +30,7 @@ import { ReactComponent as Maven } from '../assets/SVG/skills/maven.svg'
 import { ReactComponent as Intellij } from '../assets/SVG/skills/intellij.svg'
 import { ReactComponent as Eclipse } from '../assets/SVG/skills/eclipse.svg'
 import { ReactComponent as Diagram } from '../assets/SVG/skills/diagram.svg'
+import { truncateSync } from 'fs'
 
 type Props = {
   isEnglish: boolean
