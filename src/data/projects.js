@@ -16,7 +16,7 @@ import MedilaboSolutions from '../assets/IMG/medilabosolutions.png'
 export const projects = [
   {
     img: MedilaboSolutions,
-    name: 'Medilabo Soluction',
+    name: 'Medilabo Solution',
     fr: 'Une API Gateway Spring en cours de développement! Son architecture microservices intègre Docker pour containeriser MongoDB et les microservices du back-end.',
     en: 'A Spring API Gateway under development! Its microservices architecture employs Docker to containerize MongoDB and the backend microservices.',
     tags: ['DOCKER', 'GATEWAY', 'MONGODB'],

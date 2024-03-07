@@ -88,16 +88,13 @@ export default function SkillsSection({ isEnglish }: Props) {
               <React />
               <Redux />
               <Sass />
-              <Svn />
               <Tailwind />
               <Typescript />
-
               <VsCode />
               <Postman />
               <Spring />
               <Npm />
               <Intellij />
-              <Eclipse />
               <Maven />
               <Diagram />
               <Terminal />
