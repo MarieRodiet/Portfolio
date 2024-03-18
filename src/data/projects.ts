@@ -6,14 +6,30 @@ import LesPetitsPlats from '../assets/IMG/lespetitsplats.png'
 import Fisheye from '../assets/IMG/fisheye.png'
 import Healthwealth from '../assets/IMG/healthwealth.png'
 import Table from '../assets/IMG/table.png'
-import Markdown from '../assets/IMG/markdown.png'
 import Portfolio from '../assets/IMG/portfolio.png'
-import DrumMachine from '../assets/IMG/drummachine.png'
 import Booki from '../assets/IMG/booki.png'
 import PayMyBuddy from '../assets/IMG/paymybuddy.png'
 import MedilaboSolutions from '../assets/IMG/medilabosolutions.png'
+import PdfGenerator from '../assets/IMG/pdfGenerator.png'
+
+export enum types {
+    ALL = "All",
+    FRONT = "Front",
+    BACK = "Back",
+    FULLSTACK = "Fullstack",
+    UIUX = "UI / UX"
+}
 
 export const projects = [
+  {
+    img: PdfGenerator,
+    name: 'PDF Generator',
+    fr: "Un webservice qui génère des PDF à partir d' objets JSON passés dans les requêtes. Les templates Thymeleaf structurent le contenu, permettant une insertion des données dynamiques.",
+    en: 'A webservice designed to generate PDFs with data from a JSON object in the request. Thymeleaf templates structure the content of the PDF, allowing for dynamic data insertion.',
+    tags: ['POSTMAN', 'JAVA', 'PDF'],
+    url: 'https://github.com/MarieRodiet/pdfGenerator',
+    type: types.BACK,
+  },
   {
     img: MedilaboSolutions,
     name: 'Medilabo Solution',
@@ -21,6 +37,7 @@ export const projects = [
     en: 'A Spring API Gateway under development! Its microservices architecture employs Docker to containerize MongoDB and the backend microservices.',
     tags: ['DOCKER', 'GATEWAY', 'MONGODB'],
     url: 'https://github.com/MarieRodiet/mediLabo_Solutions',
+    type: types.FULLSTACK,
   },
   {
     img: PayMyBuddy,
@@ -29,6 +46,7 @@ export const projects = [
     en: 'A springboot application using thymeleaf for rendering templates and Spring Security for registration and authentication. Connected to a MySQL database through Spring data JPA.',
     tags: ['SPRINGBOOT', 'OAUTH', 'MYSQL'],
     url: 'https://github.com/MarieRodiet/payMyBuddy',
+    type: types.FULLSTACK,
   },
   {
     img: Portfolio,
@@ -38,24 +56,7 @@ export const projects = [
     tags: ['TYPESCRIPT', 'SASS', 'ANIMATIONS'],
     website: 'https://mariemoore.site',
     url: 'https://github.com/MarieRodiet/portfolio',
-  },
-  {
-    img: DrumMachine,
-    name: 'Drum Machine',
-    fr: "Cette application simpliste m'a permit de découvrir la fameuse framework Material UI, outil permettant un developpement simple et très rapide.  ",
-    en: 'A web app for practicing DOM Manipulation with Typescript and utilizing Material UI for rapid development.',
-    tags: ['TYPESCRIPT', 'MATERIAL', 'DOM'],
-    website: 'https://marierodiet.github.io/drum-machine/',
-    url: 'https://github.com/MarieRodiet/drum-machine',
-  },
-  {
-    img: Markdown,
-    name: 'MD Previewer',
-    fr: "Previewer dans lequel la saisie d'un texte Markdown se voit immédiatement convertie. Elle est stylée avec Tailwind CSS et utilise la bibliothèque Marked JS.",
-    en: 'This app allows users to input Markdown text and view the formatted output instantly. Developed with Typescript, styled with Tailwind CSS, and Markdown conversion by the Marked library.',
-    tags: ['TYPESCRIPT', 'TAILWING', 'MARKED'],
-    website: 'https://marierodiet.github.io/markedown-previewer/',
-    url: 'https://github.com/MarieRodiet/markedown-previewer',
+    type: types.FRONT,
   },
   {
     img: Table,
@@ -65,6 +66,7 @@ export const projects = [
     tags: ['NPM', 'VITE', 'TESTING'],
     website: 'https://www.npmjs.com/package/table-react-component-library',
     url: 'https://github.com/MarieRodiet/table-react-component-library',
+    type: types.FRONT,
   },
   {
     img: Healthwealth,
@@ -74,6 +76,7 @@ export const projects = [
     tags: ['REACT', 'LIGHTHOUSE', 'REDUX'],
     website: 'https://marierodiet.github.io/wealthhealth/',
     url: 'https://github.com/MarieRodiet/wealthhealth',
+    type: types.FRONT,
   },
   {
     img: ArgentBank,
@@ -82,6 +85,7 @@ export const projects = [
     en: 'A frontend project integrated with a backend API for user authentication, data storage, and manipulation. ',
     tags: ['REDUX', 'SWAGGER', 'POSTMAN'],
     url: 'https://github.com/MarieRodiet/argentBank-Front',
+    type: types.FRONT,
   },
   {
     img: SportSee,
@@ -90,6 +94,7 @@ export const projects = [
     en: 'Fetches data to generate visually appealing graphs. Utilizes the factory pattern for URL management.',
     tags: ['API', 'RECHARTS', 'REACT'],
     url: 'https://github.com/MarieRodiet/sportsee_front',
+    type: types.FRONT,
   },
   {
     img: Kasa,
@@ -99,6 +104,7 @@ export const projects = [
     tags: ['REACT', 'HOOKS', 'ROUTER'],
     url: 'https://github.com/MarieRodiet/kasa',
     website: 'https://marierodiet.github.io/kasa/',
+    type: types.FRONT,
   },
   {
     img: LearnAtHome,
@@ -109,6 +115,7 @@ export const projects = [
     url: 'https://github.com/MarieRodiet/learnAtHome',
     website:
       'https://www.figma.com/file/9Ch3Q6IListIcm51rcarKX/Learn%40Home?node-id=20%3A618',
+    type: types.UIUX,
   },
   {
     img: LesPetitsPlats,
@@ -118,6 +125,7 @@ export const projects = [
     tags: ['JSBENCH', 'ALGORYTHMS', 'WAVE'],
     url: 'https://github.com/MarieRodiet/Les-Petits-Plats',
     website: 'http://mariemoore.site/LesPetitsPlats/',
+    type: types.FRONT,
   },
   {
     img: Fisheye,
@@ -127,6 +135,7 @@ export const projects = [
     tags: ['ACCESSIBILITY', 'FETCH', 'ROUTER'],
     url: 'https://github.com/MarieRodiet/Fisheye',
     website: 'https://marierodiet.github.io/Fisheye/',
+    type: types.FRONT,
   },
   {
     img: Booki,
@@ -136,5 +145,6 @@ export const projects = [
     tags: ['HTML/CSS', 'SEO', 'RESPONSIVE'],
     url: 'https://github.com/MarieRodiet/Booki',
     website: 'http://mariemoore.site/Booki/',
+    type: types.FRONT
   },
 ]

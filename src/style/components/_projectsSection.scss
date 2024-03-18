@@ -22,6 +22,11 @@
       @include gradient();
     }
   }
+  &-selectTypes {
+    padding: 7px;
+    margin: 10px 0 10px 150px;
+    @include typo-size($main_font, map-get($font-sizes, xxs));
+  }
   &-container {
     &-project {
       color: $dark;
@@ -107,8 +112,13 @@
 
 @media (min-width: map-get($breakpoints, tablet)) {
   .projectsSection {
-    &-title {
-      @include typo-size($main_font, map-get($font-sizes, l));
+    &-header {
+      &-title {
+        @include typo-size($main_font, map-get($font-sizes, l));
+      }
+    }
+    &-selectTypes {
+      margin: 10px 0 10px 471px;
     }
     &-container {
       &-project {
@@ -139,8 +149,14 @@
     padding: 10px 100px;
     max-width: 1400px;
     margin: 0 auto;
-    &-title {
-      @include typo-size($main_font, map-get($font-sizes, xl));
+    &-header {
+      &-title {
+        @include typo-size($main_font, map-get($font-sizes, xl));
+      }
+    }
+    &-selectTypes {
+      margin: 10px 0 10px 800px;
+      @include typo-size($main_font, map-get($font-sizes, xs));
     }
     &-container {
       display: flex;

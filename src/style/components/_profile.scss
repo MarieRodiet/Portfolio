@@ -15,6 +15,9 @@
       font-weight: 300;
       text-align: start;
       @include typo-size($second_font, map-get($font-sizes, xs));
+      &-paragraphs {
+        padding-top: 15px;
+      }
     }
   }
   &-imgContainer {
@@ -60,7 +63,7 @@
         @include typo-size($main_font, map-get($font-sizes, xxl));
       }
       &-intro {
-         @include typo-size($second_font, map-get($font-sizes, ss));
+        @include typo-size($second_font, map-get($font-sizes, ss));
       }
     }
     &-imgContainer {

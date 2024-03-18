@@ -12,14 +12,14 @@ export default function Profile({ isEnglish }: Props) {
         {isEnglish ? (
           <div className="profile-text-intro">
             <p>Hi !</p>
-            <p>
+            <div>
               {' '}
               {profile.anArray.map((item, index) => (
-                <p className="pt-15" key={index}>
+                <p className="profile-text-intro-paragraphs" key={index}>
                   {item}
                 </p>
               ))}
-            </p>
+            </div>
           </div>
         ) : (
           <div className="profile-text-intro">

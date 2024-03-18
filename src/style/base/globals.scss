@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 *,
 *::after,
@@ -9,13 +10,4 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-#page-wrap {
-  padding-bottom: 0px;
-  padding-top: 0px;
-}
-
-.pt-15 {
-  padding-top: 15px;
 }

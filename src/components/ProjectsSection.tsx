@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { projects } from '../data/projects'
+import { projects, types } from '../data/projects'
 import { ReactComponent as Arrow } from '../assets/SVG/angle-down-solid.svg'
 
 type Props = {
@@ -7,6 +7,12 @@ type Props = {
 }
 export default function ProjectsSection({ isEnglish }: Props) {
   const [toggled, updateToggle] = useState(false)
+  const projects_types = Object.values(types || {})
+  const [selectedType, setType] = useState(projects_types.at(0))
+  const filteredProjects =
+    selectedType === projects_types[0]
+      ? projects
+      : projects.filter((p) => p.type === selectedType)
 
   return (
     <section className="projectsSection">
@@ -20,10 +26,27 @@ export default function ProjectsSection({ isEnglish }: Props) {
           {isEnglish ? 'Projects' : 'Projets'}
         </h1>
       </div>
-
+      <select
+        className="projectsSection-selectTypes"
+        value={selectedType}
+        onChange={(e) => {
+          const selected = (e.target as HTMLSelectElement).value as types
+          setType(selected)
+        }}
+      >
+        {projects_types.map((t, i) => (
+          <option
+            key={`${`${i}`}`}
+            value={`${`${t}`}`}
+            onClick={() => setType(t)}
+          >
+            {t}
+          </option>
+        ))}
+      </select>
       {!toggled ? (
         <div className="projectsSection-container">
-          {projects.map((p, i) => (
+          {filteredProjects.map((p, i) => (
             <div
               key={`${`${i} home page ${p.name}`}`}
               className="projectsSection-container-project"
