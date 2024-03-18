@@ -149,11 +149,6 @@
     padding: 10px 100px;
     max-width: 1400px;
     margin: 0 auto;
-    &-header {
-      &-title {
-        @include typo-size($main_font, map-get($font-sizes, xl));
-      }
-    }
     &-selectTypes {
       margin: 10px 0 10px 800px;
       @include typo-size($main_font, map-get($font-sizes, xs));
